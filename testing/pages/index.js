@@ -17,6 +17,7 @@ import styles from './styles.module.css';
 // My Custom Components
 import HomeSplash from './homesplash.js';
 import Highlights from './highlights.js';
+import HighlevelHighlights from './highlevel-highlights.js';
 import Highlight from './components/highlight.js';
 
 // Why do we need these?
@@ -117,6 +118,7 @@ function Home() {
     <Layout>
 			<HomeSplash />
 			<Highlights />
+			<HighlevelHighlights />
 			<HighlightsSection />
     </Layout>
   );
