@@ -71,12 +71,28 @@ class HighlightsSection extends React.Component {
       image: `${this.state.apod}`,
     };
 
+		// Entropy
+		const entropy = {
+			title: 'Entropy',
+			link: 'https://www.burrrata.ch/entropy',
+			description: 'A simple secure single file passphrase generator.',
+			image: 'https://camo.githubusercontent.com/80ed774dd004f7901a4819cbdea6150211d01725/68747470733a2f2f696d67732e786b63642e636f6d2f636f6d6963732f70617373776f72645f737472656e6774682e706e67',
+		}
+
 		// Rusty Cryptoeconomics
 		const rustyCryptoeconomics = {
 			title: 'Rusty Cryptoeconomics',
 			link: 'https://www.burrrata.ch/rusty_cryptoeconomics/intro.html',
 			description: 'How to roll a blockchain from scratch with Rust.',
 			image: 'https://github.com/burrrata/rusty_cryptoeconomics/raw/master/readme.jpg',
+		}
+
+		// Tic Tac Toe
+		const ticTacToe = {
+			title: 'Tic Tac Toe',
+			link: 'https://www.burrrata.ch/tic-tac-toe/',
+			description: 'An interactive Tic Tac Toe game used to initialize a Game of Life.',
+			image: 'https://github.com/burrrata/tic-tac-toe/blob/master/tic-tac-toe.png?raw=true',
 		}
 
 		// Molochasaurus
@@ -95,7 +111,9 @@ class HighlightsSection extends React.Component {
         }}>
         <Highlight {...genericAPOD} />
         <Highlight {...latestAPOD} />
+				<Highlight {...entropy} />
 				<Highlight {...rustyCryptoeconomics} />
+				<Highlight {...ticTacToe} />
 				<Highlight {...molochasaurus} />
       </div>
     );

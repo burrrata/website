@@ -14,9 +14,7 @@ const highlights = [
   {
     title: 'Fullstack Developer',
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
-    description:
-      'Experience with React, Rust, Python, Tensorflow, and more...'
-
+    description: 'Experience with React, Rust, Python, Tensorflow, and more...',
   },
   {
     title: 'Focus on your docs',

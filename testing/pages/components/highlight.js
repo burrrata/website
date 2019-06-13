@@ -42,12 +42,14 @@ const Highlight = (props) => (
             //color: '#fff',
 						flex: '0 0 50%',
 						}}>
-				<img style={{
-              width: '33vmin',
-              height: '33vmin',
-							borderRadius: '50%',
-						}}
-						src={props.image} />
+				<a href={props.link}>
+					<img style={{
+								width: '33vmin',
+								height: '33vmin',
+								borderRadius: '50%',
+							}}
+							src={props.image} />
+					</a>
 				</div>
 		</div>
 );
