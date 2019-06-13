@@ -5,6 +5,12 @@ const MarkdownBlock = CompLibrary.MarkdownBlock;
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
+// Why does importing the module fail?
+//   I did it the same way I did it in other projects including Docusaurus 2
+//import Highlight from '../components/hightlight.js';
+//const Highlight = require('../components/highlight.js');
+
+// Why do we need a Regenerator Runtime?
 const fetch = require('node-fetch');
 const regeneratorRuntime =  require("regenerator-runtime");
 
@@ -98,10 +104,61 @@ class HomeSplash extends React.Component {
 
 
 
+// a generic component that takes in parameters to display
+const Highlight = (props) => (
+		<div style={{
+        //background: 'black',  
+				//border: '2px solid red',
+				margin: '0 auto',
+				display: 'flex',
+				flexFlow: 'row nowrap',
+				flex: 'auto',
+				flexDirection: 'row',
+				justifyContent: 'space-between',
+				padding: '2vmin',
+				textAlign: 'center',
+				alignItems: 'center',
+				fontSize: '3vmin',
+				wordWrap: 'break-word',
+        minHeight: '50vmin',
+        minWidth: '80vmin',
+				}}>
+				<div style={{
+            //background: 'blue',
+            //color: '#fff',
+            flex: '0 0 50%',
+						}}>
+          <div style={{
+              paddingTop: '10vmin',
+            }}>
+            <h2>
+							{props.title}
+						</h2>
+            <p>
+              {props.description}
+            </p>
+          </div>
+				</div>
+				<div style={{
+            //background: 'green',
+            //color: '#fff',
+						flex: '0 0 50%',
+						}}>
+				<img style={{
+              width: '33vmin',
+              height: '33vmin',
+							borderRadius: '50%',
+						}}
+						src={props.image} />
+				</div>
+		</div>
+);
+
 
 // Main Index Component
 class Index extends React.Component {
-	// init state
+
+	// init component state
   constructor(props) {
     super(props);
     this.state = {
@@ -109,34 +166,25 @@ class Index extends React.Component {
     };
   }
 
-	// run async function
   componentDidMount() {
-		//this.getLatestAPOD()
-    this.timerAPOD = setInterval(
-			() => { 
-				this.getLatestAPOD();
-			},
-      1000
-    );
-  }
-  componentWillUnmount() {
-    clearInterval(this.timerAPOD);
+    this.getLatestAPOD()
   }
 
-	// function to get latest APOD image url
   async getLatestAPOD() {
-		const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=ExE5PaDrbnGZ8yZfAXdWF4cd4vw9sB8QcKMNVrUg';
+		const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY';
 		let response = await fetch(APOD_API);
 		let data = await response.json();
 	  let url = await data.url;
     this.setState({
       apod: url
+      // use a fixed URL for testing as to not max out the APOD API limits
+      //apod: 'https://apod.nasa.gov/apod/image/1906/M96_HubbleShatz_960.jpg',
     })
   }
 
 	// render the components
   render() {
-;
+
 		// Useful Stuff
     const {config: siteConfig, language = ''} = this.props;
     const {baseUrl} = siteConfig;
@@ -228,7 +276,7 @@ class Index extends React.Component {
 				{
 					title: 'ApodopA',
 					content: 'Exploring NASA\'s APOD archive to create things that did not exist before',
-					//image: `${this.state.apod}`,
+					image: `${this.state.apod}`,
 					imageAlign: 'left',
 				},
 			]}
