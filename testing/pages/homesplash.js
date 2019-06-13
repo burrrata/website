@@ -48,6 +48,10 @@ function HomeSplash() {
 							'button button--outline button--primary button--lg buttonPadding',
 							styles.getStarted,
 						)}
+						style={{
+							background: 'white',
+							border: 'solid 0.5vmin',
+						}}
 						to={withBaseUrl('docs/doc1')}>
 						Get Started
 					</Link>

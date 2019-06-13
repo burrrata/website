@@ -22,17 +22,17 @@ module.exports = {
 				{
 					label: 'Projects', 
 					to: 'docs/doc1', 
-					position: 'right'
+					position: 'left'
 				},
 				{
 					label: 'Blog', 
 					to: 'blog', 
-					position: 'right'
+					position: 'left'
 				},
         {
           label: 'Work With Me',
 					to: '',
-          position: 'right',
+          position: 'left',
         },
       ],
     },
@@ -76,6 +76,10 @@ module.exports = {
         {
           title: 'My Stuff',
           items: [
+						{
+							label: 'Projects',
+							to: 'docs/doc1',
+						},
             {
               label: 'Blog',
               to: 'blog',
