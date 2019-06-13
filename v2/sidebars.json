@@ -4,6 +4,6 @@
     "Utilities": ["style-guide"]
   },
   "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "First Category": ["doc4", "style-guide"]
   }
 }

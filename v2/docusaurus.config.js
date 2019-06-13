@@ -8,8 +8,16 @@
 module.exports = {
   title: 'burrrata',
   tagline: 'yet another anonymous piece of cheese on the internet',
+	organizationName: 'burrrata',
+	projectName: 'website',
+	////////////////////////////////////
+	// for publishing to gh-pages branch
+	url: 'https://burrrata.github.io',
+	baseUrl: 'website',
+	// for local development
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
+	///////////////////////////
   favicon: 'img/favicon.ico',
   themeConfig: {
     navbar: {

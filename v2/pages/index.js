@@ -11,7 +11,7 @@ import styles from './styles.module.css';
 import HomeSplash from './homesplash.js';
 import Highlight from './components/highlight.js';
 
-// Why do we need these?
+// Why do we need these when using old React classes?
 const fetch = require('node-fetch');
 const regeneratorRuntime =  require("regenerator-runtime");
 
@@ -106,26 +106,23 @@ const HighlevelHighlight = (props) => (
 
 // stateful component that gets the URL for the latest APOD image and displays it in an img
 function LatestAPOD() {
-  
 	// init state
 	const [APOD, setAPOD] = useState(null);
-
 	// async function to get the latest APOD URL from the APOD API
 	async function getLatestAPOD() {
-		//const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=ExE5PaDrbnGZ8yZfAXdWF4cd4vw9sB8QcKMNVrUg';
-		const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY';
+		const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=ExE5PaDrbnGZ8yZfAXdWF4cd4vw9sB8QcKMNVrUg';
+		//const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY';
 		const response = await fetch(APOD_API);
 		const data = await response.json();
 		const url = await data.url;
 		return url
+		//setAPOD(url)
 	}
-  
   // useEffect to get the APOD API data
   useEffect(() => {
     getLatestAPOD()
       .then(res => setAPOD(res))
-  })
-
+	})
 	// latest APOD data
 	const latestAPOD = {
 		title: 'Here\'s today\'s APOD:',
@@ -133,7 +130,6 @@ function LatestAPOD() {
 		description: 'Such APOD. Very new. Many wow.',
 		image: `${APOD}`,
 	};
-  
 	// return the component
 	return (
 		<Highlight {...latestAPOD} />
@@ -168,10 +164,8 @@ function HighlevelHighlights() {
 	);
 }
 
-
 // a component that holds stateful data and passes those to highlight components
 function HighlightsSection() {
-	
 	// return the components in a container with a little padding
 	return (
 		<div style={{
