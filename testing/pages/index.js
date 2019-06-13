@@ -75,7 +75,7 @@ class HighlightsSection extends React.Component {
 		const entropy = {
 			title: 'Entropy',
 			link: 'https://www.burrrata.ch/entropy',
-			description: 'A simple secure single file passphrase generator.',
+			description: 'A simple secure passphrase generator.',
 			image: 'https://camo.githubusercontent.com/80ed774dd004f7901a4819cbdea6150211d01725/68747470733a2f2f696d67732e786b63642e636f6d2f636f6d6963732f70617373776f72645f737472656e6774682e706e67',
 		}
 
