@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <meta charset='utf-8'>
+  <meta name='viewport'
+        content='width=device-width'>
+
+
+  <title>
+    burrrata.ch 
+  </title>
+
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
+  <style>
+
+		/* Body */
+  	body {
+			position: relative;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+  	}
+		/*
+		body{ 
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+	  */
+
+    /* Main Page */
+    #main {
+      position: relative;
+      flex: auto;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      word-wrap: break-word;
+      padding: 5vmin;
+    }
+
+    /* App */
+    #app {
+      padding: 5vmin;
+      font-size: 5vmin;
+    }
+    #appTitle {
+      padding: 5vmin;
+      font-size: 8vmin;
+    }
+    .appModule {
+      padding: 5vmin;
+    }
+    .appModuleTitle {
+      font-size: 5vmin;
+    }
+    .appModuleMain {
+      font-size: 3vmin;
+    }
+
+    /* App/Notes Barrier */
+    #app2Notes {
+      border: none;
+      background: black;
+      height: 1vmin;
+    }
+
+		/* gameOfLife */
+		#gameOfLife {
+			padding: 3vmin;
+      position: relative;
+      flex: auto;
+		}
+
+    /* Notes */
+    #notes {
+      padding: 3vmin;
+      font-size: 3vmin;
+      text-align: left;
+    }
+    #notesTitle {
+      text-align: center;
+      padding: 1vmin;
+      font-size: 5vmin;
+    }
+    .notesModule {
+      padding: 1vmin;
+    }
+    .notesModuleTitle {
+      font-size: 4vmin;
+    }
+    .notesModuleMain {
+      font-size: 3vmin;
+    }
+
+		/* Footer */
+		#footer {
+			padding: 10vmin;
+			text-align: center;
+			font-size: 5vmin;
+		}
+
+  </style>
+
+
+  <script>
+    // JS Goes Here
+  </script>
+
+
+</head>
+
+
+
+<body>
+  
+
+  <!-- Main -->
+  <div id='main'>
+  
+
+    <!-- App -->
+    <div id='app'>
+
+
+      <!-- App Title -->
+ 			<!-- 
+      <div id='appTitle'>
+      </div>
+      <hr>
+			-->
+
+  
+		  <!-- App Module Title -->
+      <div class='appModule'>
+        <div class='appModuleTitle'>
+          <p>
+						Logan Mnogolits
+					</p>
+					<div>
+						<img src="https://thispersondoesnotexist.com/image" height=300vmin width=300vmin>
+					</div>
+        </div>
+				<div class='appModuleTitle'>
+					<p>
+						aka: burrrata
+					</p>
+					<div>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Burrata2.jpg/1200px-Burrata2.jpg" height=300vmin width=300vmin>
+					</div>
+				</div>
+
+
+		  <!-- App Module 1 -->
+      <div class='appModule'>
+				<div class='appModuleTitle'>
+					<p>
+						About Me	
+					</p>
+				</div>
+				<div class='appModuleMain'>
+					<p>
+						I spend the majority of my time careening through the internet and oversharing as I go. I care deeply about anything that furthers human cooperation and coordination. Ideally this looks like positive sum incentive alignment mechanisms (cryptoeconomics) that support the development of the commons. </p>
+          <p>
+						<br>
+          <p align='left'>
+            More concretely, this looks like:
+            <ul align='left'>
+              <li>
+                sovereign identity/data
+              </li>
+              <li>
+                decentralized finance
+              </li>
+              <li>
+                FLOSS and permission-less innovation
+              </li>
+              <li>
+                automating the routine to make room for deeper thought
+              </li>
+              <li>
+                community driven networks where users have a say in governance and receive value when they contribute value
+              </li>
+          </ul>
+          </p>
+          <p align='left'>
+            To do this I'm currently exploring:
+            <ul align='left'>
+              <li>
+                client side crypto and ML applications
+              </li>
+              <li>
+                decentralized governance in FLOSS and blockchain communities
+              </li>
+              <li>
+                full stack application development with user controlled identity/data, verifiable scripts that run client side, and decentralized infrastructure on the back end
+              </li>
+          </ul>
+          </p>
+				</div>
+      </div>
+
+
+      <!-- App Module 2 -->
+      <div class='appModule'>
+        <div class='appModuleTitle'>
+					My Works (in progress)
+        </div>
+        <div class='appModuleMain'>
+					<ul align='left'>
+						<li>
+							<p>
+								<b><a href='https://www.burrrata.ch/tic-tac-toe/'>Tic Tac Toe</a></b>
+							</p>
+							<p>
+								An interactive Tic Tac Toe game where the Endgame initializes a Game of Life.
+							</p>
+						</li>
+						<!--
+						<li>
+							<p>
+              	<b><a href='https://github.com/burrrata/DOH'>The D🍩Hnut Protocol</a></b>
+							</p>
+								A framework to bridge Web2 users and communities with Web3 platforms and technologies. This would give people a way to organically upgrade their experience from being locked into a centralized service to iteratively exploring the capabilities of decntralized Web3 technologies. Rather than having a centralized exchange be the first step of the onboarding experience, people can have experiences that are based on social interaction that extends platforms they are already familiar with. 
+							<p>
+							</p>
+						</li>
+						-->
+						<li>
+							<p>
+								<b><a href='https://www.burrrata.ch/rusty_cryptoeconomics/'>Rusty Cryptoeconomics</a></b>
+							</p>
+							<p>
+								A Rust book that explores the basics of blockchain infrastructure. All code examples can be run in the browser via the <a href='https://play.rust-lang.org'>Rust Playground</a>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<b><a href='https://www.burrrata.ch/entropy/'>Entropy</a></b>
+							</p>
+							<p>
+								A single file passphrase generator written in vanilla javascript w the <a href='https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API'>Web Crypto API</a>. Also includes resources to understand the basics of password cracking and why size really does matter.
+								<br>
+								- TL;DR: every additional character you add to a passphrase exponentially increases the difficulty, so pick a long and memorable phrase :)
+							</p>
+						</li>
+					</ul>
+					<div>
+						<p>
+							More stuff on <a href="https://github.com/burrrata/">GitHub</a>
+						</p>
+					</div>
+        </div>
+      </div>
+ 
+
+
+      <!-- App Module 3 -->
+      <!--
+      <div class='appModule'>
+        <div class='appModuleTitle'>
+					What's Next?
+        </div>
+        <div class='appModuleMain'>
+					<p>
+						<ul align='left'>
+							<li>
+								<b>Terrifying Terminology 👻</b>
+								<p>
+									A terminology tutorial that walks people through confusing concepts in the web3 ecosystem and explains them in simple english. This could help anyone who wants to learn about the Web3 space as well as anyone else writing docs/tutorials to keep language consistent throughout the space.
+								</p>
+							</li>
+							<li>
+								<p>
+									<b>The D🍩H-nut Protocol</b>
+								</p>
+								<p>
+									A web2/web3 data bridge tutorial showing how you can use Substrate and Polkadot to fetch data from an off-chain source and connect communities organically to Web3. This would start with Reddit and potentially /r/dot or /r/web3.
+								</p>
+							</li>
+							<li>
+								<p>
+									<b>D🍩H-nut Protocol 2.0</b>
+								</p>
+								<p>
+									A community engagement portal using DAOs that allows people to discuss, propose, and vote on community improvements via technology created by Web3 partners such as Edgeware, SpeckleOS, and more.
+								</p>
+							</li>
+							<li>
+								<p>
+									<b>Substrate Model Zoo 🦓</b>
+								</p>
+								<p>
+									Like the Caffe or TensorFlow model zoos, but with prebuilt Substrate chain templates specialized for various tasks. Devs could then modify them however they want or roll them out as is, kind of like changing the top few layers on a conv net towards your specific image recognition task. In addition, since Substrate is very modular you could have an additional bucket of "add on" plug and play components (verified by the Rust compiler like on crates.io) that people could add to their modules in a few clicks or lines of code (like networking, off-chain oracle integration, quantum hard crypto, etc...). This could make the process of building chains, discovering modules, and on-boarding new developers 10x easier and faster. 
+								</p>
+							</li>
+							<li>
+								<p>
+									<b>Web3 Infrastructure Directory ⚙️</b>
+								</p>
+								<p>
+									A Web3 Infrastructure Directory to make it easier for people to find and learn about projects in the space. This would include a TL;DR of what the projects do, links to all their channels, and potentially a "chain builder" that rolls out a Substrate chain template with the technology of the project baked in.
+								</p>
+							</li>
+							<li>
+								<p>
+									<b>Docs, Tutorials, and Stuff 📰</b>
+								</p>
+								<p>
+									Docs, tutorials, and content around all of these so that people can understand and hack on them on their own, at meetups, or at hackathons. 
+								</p>
+							</li>
+						</ul>
+					</p>
+        </div>
+      </div>
+
+    </div>
+    -->
+
+
+		<!-- Game Of Life -->
+		<!--
+		<div class='appModule'>
+			<div id='gameOfLife'>
+				<canvas id="game-of-life-canvas"></canvas>
+    		<script src="./bootstrap.js"></script>    
+			</div>
+		</div>
+		-->
+
+	  	<!-- Contact Info -->
+      <div class='appModule'>
+        <div class='appModuleTitle'>
+					<p>
+						Talk To Me
+					</p>
+        </div>
+        <div class='appModuleMain'>
+					<p>
+						<a href=''>@burrrata</a> on Matrix/Riot
+					</p>
+					<p>
+						<a href="https://www.reddit.com/user/burrrata/">/u/burrrata</a> on Reddit
+					</p>
+					<p>
+						burrrata || Logan Mnogolits at protonmail dot com
+					</p>
+        </div>
+      </div>
+
+
+</body>
+
+</html>

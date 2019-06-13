@@ -1,0 +1,216 @@
+/* Default Docusaurus Styling */
+.header {
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 550px; 
+}
+
+.buttons  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons iframe {
+  margin-left: 1rem;
+}
+@media screen and (min-height: 900px) {
+  .buttons {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header {
+    /* display mainly the header section */
+    height: calc(100vh - 120px);
+  }
+}
+@media screen and (max-width: 799px) {
+.header {
+    /* display just one highlight */
+    height: calc(100vh - 310px);
+  }
+}
+@media screen and (min-width: 800px) and (max-height: 999px) { 
+  /* if the viewport is not tall enough, display just the header */
+  .header {
+    height: calc(100vh - 120px);
+  }
+}
+@media screen and (min-width: 800px) and (min-height: 1000px) { 
+  /* if the viewport is tall enough, split between header and highlights */
+  .header {
+    padding: 4rem 0;
+    height: calc((100vh - 60px - 60px) * .6);
+  }
+}
+
+/* secondary section on the first screen */
+.highlights {
+  background: var(--ifm-color-black-alpha-10);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 350px;
+}
+
+.highlight {
+  text-align: center;
+}
+.highlight img {
+  height: 200px;
+  width: 200px;
+}
+.highlight p {
+  text-align: left;
+}
+
+@media screen and (min-width: 520px) and (max-width: 1023px) {
+  .highlights {
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .highlights {
+    height: calc((100vh - 60px - 60px) * .4);
+  }
+}
+
+
+
+
+
+/* General Stuff */
+.buttonSpacing {
+	padding: 2vmin;
+	margin: 2vmin;
+}
+
+
+
+
+
+/* Styling For Projects Components */
+.projectContainer {
+  display: flex;
+  align-items: center;     /* vertical */
+  justify-content: center; /* horizontal */
+	padding: 2em;
+	margin: 2em;
+	min-height: 50vh;
+}
+.projectText {
+	position: relative;
+	text-align: center;
+	padding: 100px;
+	margin: 2em;
+	float: left;
+}
+.projectImageContainer {
+	margin: 0 auto;
+}
+.projectImage {
+	position: relative;
+	float: right;
+}
+
+
+
+/****************
+Tic Tac Toe Params
+****************/
+
+/*
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box; 
+}
+*/
+
+.app {
+  flex: auto;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10vmin;
+  padding: 1%;
+}
+
+.app-header {
+  text-align: center;
+  color: yellow;
+  padding: 3%;
+  /* border: 1px solid blue; */
+}
+.app-header-div {
+  padding: 3%;
+}
+
+.app-body {
+  padding: 3%;
+  /* border: 1px solid blue; */
+}
+.app-body-div {
+  padding: 3%;
+}
+
+.table {
+  flex: auto;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border-collapse: collapse;
+  font-size: 0; /* setting font-size to 0 removes the spaces between rows */
+}
+
+/****************
+Tic Tac Toe Board
+****************/
+.cell {
+  height: 3vmin;
+  width: 3vmin;
+}
+
+.alive {
+  background: black;
+}
+
+.dead {
+  background: white;
+}
+
+.under {
+  position: relative;
+  z-index: 1;
+  /* border: 5px solid yellow; */
+}
+
+/**********************
+Clickable Table Overlay
+**********************/
+.over {
+  position: absolute;
+  /* because the .over element is absolute, it is out of the flow of the app 
+     this means we have to manually set the left and right alignment */
+  left: 9%;
+  right: 9%;
+  z-index: 2;
+  opacity: 0;
+  /* border: 5px solid red; */
+}
+
+.click-square {
+  width: 25vmin;
+  height: 25vmin;
+}
+.click-square:focus {
+  outline: none;
+}
+
+
+

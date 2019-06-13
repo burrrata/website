@@ -1,0 +1,155 @@
+/* Docusaurus V1 Defaults */
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
+
+
+
+
+/* Custom Splash Screen Styling */
+.profileImage {
+	height: 50vmin;
+	width: 50vmin;	
+	border-radius: 50%;
+  border: 0.5vmin solid #DA291C; /* #FFC72C #DA291C */
+	float: left;
+}
+.splash {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Burrata2.jpg/1200px-Burrata2.jpg);
+}
+.blackText {
+	color: black;
+}
+.margin2vmin {
+	margin: 2vmin;
+}
+.whiteBackground {
+	background: white;
+}
+
+
+
+/* navbar menu */
+.fixedHeaderContainer {
+	font-size: 3vmin;
+	font-weight: bold;
+}
+
+
+
+
+/* Styling For Projects Components */
+.projectContainer {
+  display: flex;
+  align-items: center;     /* vertical */
+  justify-content: center; /* horizontal */
+	padding: 2em;
+	margin: 2em;
+	min-height: 50vh;
+}
+.projectText {
+	position: relative;
+	text-align: center;
+	padding: 100px;
+	margin: 2em;
+	float: left;
+}
+.projectImageContainer {
+	margin: 0 auto;
+}
+.projectImage {
+	position: relative;
+	float: right;
+}
+
+
+
+/* Tic Tac Toe Params */
+/*
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box; 
+}
+*/
+.app {
+  flex: auto;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10vmin;
+  padding: 1%;
+}
+.app-header {
+  text-align: center;
+  color: yellow;
+  padding: 3%;
+}
+.app-header-div {
+  padding: 3%;
+}
+.app-body {
+  padding: 3%;
+}
+.app-body-div {
+  padding: 3%;
+}
+.table {
+  flex: auto;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border-collapse: collapse;
+  font-size: 0; /* setting font-size to 0 removes the spaces between rows */
+}
+/* Tic Tac Toe Board */
+.cell {
+  height: 3vmin;
+  width: 3vmin;
+}
+.alive {
+  background: black;
+}
+.dead {
+  background: white;
+}
+.under {
+  position: relative;
+  z-index: 1;
+}
+/* Clickable Table Overlay For Tic Tac Toe Board */
+.over {
+  position: absolute;
+  /* because the .over element is absolute, it is out of the flow of the app 
+     this means we have to manually set the left and right alignment */
+  left: 9%;
+  right: 9%;
+  z-index: 2;
+  opacity: 0;
+}
+.click-square {
+  width: 25vmin;
+  height: 25vmin;
+}
+.click-square:focus {
+  outline: none;
+}
+
+
+
