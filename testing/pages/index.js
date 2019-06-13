@@ -1,5 +1,5 @@
 // Docusaurus Default Imports
-import React from 'react';
+import React, {Component, useState, useEffect} from 'react';
 import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -82,8 +82,6 @@ const molochasaurus = {
 
 
 
-
-
 // a generic component that takes in parameters to display
 const HighlevelHighlight = (props) => (
 		<div style={{
@@ -112,6 +110,36 @@ const HighlevelHighlight = (props) => (
       </p>
 		</div>
 );
+
+// gets the URL for the latest APOD image and displays it in an img
+function LatestAPOD() {
+	// init state
+	const [APOD, setAPOD] = useState(null);
+
+	// async function to get the latest APOD URL from the APOD API
+  async function getLatestAPOD() {
+    const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=ExE5PaDrbnGZ8yZfAXdWF4cd4vw9sB8QcKMNVrUg';
+		//const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY';
+		const response = await fetch(APOD_API);
+		const data = await response.json();
+	  const url = await data.url;
+    setAPOD(url)
+  }
+ 
+	// latest APOD data
+	const latestAPOD = {
+		title: 'Here\'s today\'s APOD:',
+		link: 'https://apod.nasa.gov',
+		description: 'Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter. The process of using filler text is sometimes called greeking, although the text itself may be nonsense, or largely Latin, as in Lorem ipsum.',
+		image: `${APOD}`,
+	};
+
+	// return the component
+	return (
+		<HighlevelHighlight {...latestAPOD} />
+	);
+}
+
 
 // a component that holds stateful data and passes those to HighlevelHighlight components
 function HighlevelHighlights() {
@@ -142,58 +170,22 @@ function HighlevelHighlights() {
 
 
 // a component that holds stateful data and passes those to highlight components
-class HighlightsSection extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      apod: null,
-    };
-  }
-
-  componentDidMount() {
-    this.getLatestAPOD()
-  }
-  
-  async getLatestAPOD() {
-    //const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=ExE5PaDrbnGZ8yZfAXdWF4cd4vw9sB8QcKMNVrUg';
-		const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY';
-		let response = await fetch(APOD_API);
-		let data = await response.json();
-	  let url = await data.url;
-    this.setState({
-      apod: url
-      // use a fixed URL for testing as to not max out the APOD API limits
-      //apod: 'https://apod.nasa.gov/apod/image/1906/M96_HubbleShatz_960.jpg',
-    })
-  }
- 
-  // render
-  render () {
-
-		// latest APOD data
-		const latestAPOD = {
-			title: 'Here\'s today\'s APOD:',
-			link: 'https://apod.nasa.gov',
-			description: 'Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter. The process of using filler text is sometimes called greeking, although the text itself may be nonsense, or largely Latin, as in Lorem ipsum.',
-			image: `${this.state.apod}`,
-		};
-    
-    // return the components in a container with a little padding
-    return (
-      <div style={{
-          padding: '5vmin',
-        }}>
-        <Highlight {...genericAPOD} />
-        <Highlight {...latestAPOD} />
-				<Highlight {...entropy} />
-				<Highlight {...rustyCryptoeconomics} />
-				<Highlight {...ticTacToe} />
-				<Highlight {...molochasaurus} />
-      </div>
-    );
-  }
+function HighlightsSection() {
+	
+	// return the components in a container with a little padding
+	return (
+		<div style={{
+				padding: '5vmin',
+			}}>
+			<Highlight {...genericAPOD} />
+			<LatestAPOD />
+			<Highlight {...entropy} />
+			<Highlight {...rustyCryptoeconomics} />
+			<Highlight {...ticTacToe} />
+			<Highlight {...molochasaurus} />
+		</div>
+	);
 }
-
 
 
 // Homepage Component
