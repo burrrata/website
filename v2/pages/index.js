@@ -40,14 +40,6 @@ const highlight3 = {
 
 
 
-// Generic APOD Data 
-const genericAPOD = {
-	title: 'Here\'s an APOD:',
-	link: 'https://apod.nasa.gov',
-	description: 'APOD helps you discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.',
-	image: 'https://apod.nasa.gov/apod/image/1905/Trumpler14_Hubble_960.jpg',
-};
-
 // Entropy
 const entropy = {
 	title: 'Entropy',
@@ -120,8 +112,8 @@ function LatestAPOD() {
 
 	// async function to get the latest APOD URL from the APOD API
 	async function getLatestAPOD() {
-		const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=ExE5PaDrbnGZ8yZfAXdWF4cd4vw9sB8QcKMNVrUg';
-		//const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY';
+		//const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=ExE5PaDrbnGZ8yZfAXdWF4cd4vw9sB8QcKMNVrUg';
+		const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY';
 		const response = await fetch(APOD_API);
 		const data = await response.json();
 		const url = await data.url;
@@ -138,7 +130,7 @@ function LatestAPOD() {
 	const latestAPOD = {
 		title: 'Here\'s today\'s APOD:',
 		link: 'https://apod.nasa.gov',
-		description: 'So new. Much APOD. Many wow.',
+		description: 'Such APOD. Very new. Many wow.',
 		image: `${APOD}`,
 	};
   
@@ -185,7 +177,6 @@ function HighlightsSection() {
 		<div style={{
 				padding: '5vmin',
 			}}>
-			<Highlight {...genericAPOD} />
 			<LatestAPOD />
 			<Highlight {...entropy} />
 			<Highlight {...rustyCryptoeconomics} />
