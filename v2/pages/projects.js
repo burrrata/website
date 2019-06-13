@@ -1,3 +1,9 @@
+// This page is basically the same thing as the Showcase component in index.js
+//
+// note: the version here is old and copied from Docusaurus V1
+
+
+
 const React = require('react');
 const CompLibrary = require('../../core/CompLibrary.js');
 const Container = CompLibrary.Container;

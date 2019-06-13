@@ -1,5 +1,9 @@
 import React from 'react';
 
+
+// NOTE
+// This is currently being maintained inside of index.js and not imported. This is (likely) an outdated version.
+
 // a generic component that takes in parameters to display
 const HighlevelHighlight = (props) => (
 		<div style={{

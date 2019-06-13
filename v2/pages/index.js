@@ -16,6 +16,8 @@ const fetch = require('node-fetch');
 const regeneratorRuntime =  require("regenerator-runtime");
 
 
+// COMPONENT DATA
+/////////////////
 
 // highlevel highlight 1
 const highlight1 = {
@@ -23,22 +25,18 @@ const highlight1 = {
 	description: 'Filler text is text that is random or otherwise generated.',
 	image: 'https://apod.nasa.gov/apod/image/1905/Trumpler14_Hubble_960.jpg',
 };
-
 // highlevel highlight 2
 const highlight2 = {
 	title: 'Highlight 2',
 	description: 'Filler text is text that shares some characteristics of a real written text.',
 	image: 'https://apod.nasa.gov/apod/image/1903/F_JellyFish_FIN_APOD1024.jpg',
 };
-
 // highlevel highlight 3
 const highlight3 = {
 	title: 'Highlight 3',
 	description: 'Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated.',
 	image: 'https://apod.nasa.gov/apod/image/1905/CarinaWideField_Willasch_1080.jpg',
 };
-
-
 
 // Entropy
 const entropy = {
@@ -47,7 +45,6 @@ const entropy = {
 	description: 'A simple secure passphrase generator.',
 	image: 'https://camo.githubusercontent.com/80ed774dd004f7901a4819cbdea6150211d01725/68747470733a2f2f696d67732e786b63642e636f6d2f636f6d6963732f70617373776f72645f737472656e6774682e706e67',
 }
-
 // Rusty Cryptoeconomics
 const rustyCryptoeconomics = {
 	title: 'Rusty Cryptoeconomics',
@@ -55,7 +52,6 @@ const rustyCryptoeconomics = {
 	description: 'How to roll a blockchain from scratch with Rust.',
 	image: 'https://github.com/burrrata/rusty_cryptoeconomics/raw/master/readme.jpg',
 }
-
 // Tic Tac Toe
 const ticTacToe = {
 	title: 'Tic Tac Toe',
@@ -63,7 +59,6 @@ const ticTacToe = {
 	description: 'An interactive Tic Tac Toe game used to initialize a Game of Life.',
 	image: 'https://raw.githubusercontent.com/burrrata/tic-tac-toe/master/tic-tac-toe.png',
 }
-
 // Molochasaurus
 const molochasaurus = {
 	title: 'Molochasaurus',
@@ -179,6 +174,47 @@ function HighlightsSection() {
 		</div>
 	);
 }
+
+// Placeholder
+const PROJECTS = null;
+// Showcase Component
+const Showcase = () => {
+	// Don't display the showcase if there are no items
+	if ((PROJECTS.project || []).length === 0) {
+		return null;
+	}
+	// Process the items
+	const showcase = PROJECTS.project
+		.filter(project => project.pinned)
+		.map(project => (
+			<a href={project.infoLink} key={project.infoLink}>
+				<img src={project.image} alt={project.caption} title={project.caption} />
+			</a>
+		));
+	// Return the showcase items
+	return (
+		<div>
+			<h2>
+				More Projects
+			</h2>
+			<p>
+				Here's more things I've built or contributed to
+			</p>
+			<div>
+				{showcase}
+			</div>
+			<div>
+				<a 
+					className="button" 
+					href=''
+				>
+					More Projects 
+				</a>
+			</div>
+		</div>
+	);
+};
+
 
 
 // Homepage Component
