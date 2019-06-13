@@ -18,10 +18,6 @@ import styles from './styles.module.css';
 import HomeSplash from './homesplash.js';
 import Highlights from './highlights.js';
 import Highlight from './components/highlight.js';
-//import HighlightsSection from './highlights-section.js';
-import RustyCryptoeconomics from './projects/rusty-cryptoeconomics.js';
-import Molochasaurus from './projects/molochasaurus.js';
-import TicTacToe from './projects/tic-tac-toe.js';
 
 // Why do we need these?
 const fetch = require('node-fetch');
