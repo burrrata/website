@@ -111,32 +111,40 @@ const HighlevelHighlight = (props) => (
 		</div>
 );
 
-// gets the URL for the latest APOD image and displays it in an img
+
+// stateful component that gets the URL for the latest APOD image and displays it in an img
 function LatestAPOD() {
+  
 	// init state
 	const [APOD, setAPOD] = useState(null);
 
 	// async function to get the latest APOD URL from the APOD API
-  async function getLatestAPOD() {
-    const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=ExE5PaDrbnGZ8yZfAXdWF4cd4vw9sB8QcKMNVrUg';
+	async function getLatestAPOD() {
+		const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=ExE5PaDrbnGZ8yZfAXdWF4cd4vw9sB8QcKMNVrUg';
 		//const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY';
 		const response = await fetch(APOD_API);
 		const data = await response.json();
-	  const url = await data.url;
-    setAPOD(url)
-  }
- 
+		const url = await data.url;
+		return url
+	}
+  
+  // useEffect to get the APOD API data
+  useEffect(() => {
+    getLatestAPOD()
+      .then(res => setAPOD(res))
+  })
+
 	// latest APOD data
 	const latestAPOD = {
 		title: 'Here\'s today\'s APOD:',
 		link: 'https://apod.nasa.gov',
-		description: 'Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter. The process of using filler text is sometimes called greeking, although the text itself may be nonsense, or largely Latin, as in Lorem ipsum.',
+		description: 'So new. Much APOD. Many wow.',
 		image: `${APOD}`,
 	};
-
+  
 	// return the component
 	return (
-		<HighlevelHighlight {...latestAPOD} />
+		<Highlight {...latestAPOD} />
 	);
 }
 
