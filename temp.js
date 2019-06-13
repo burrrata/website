@@ -1,3 +1,6 @@
+
+import React from 'react';
+
 // a generic component that takes in parameters to display
 const Highlight = (props) => (
 		<div style={{
@@ -48,6 +51,16 @@ const Highlight = (props) => (
 							}}
 							src={props.image} />
 					</a>
+				</div>
+		</div>
+);
+
+// export the component
+export default Highlight
+
+
+
+
 
 
 // gets the URL for the latest APOD image and displays it in an img
