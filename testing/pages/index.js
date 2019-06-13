@@ -92,7 +92,7 @@ class HighlightsSection extends React.Component {
 			title: 'Tic Tac Toe',
 			link: 'https://www.burrrata.ch/tic-tac-toe/',
 			description: 'An interactive Tic Tac Toe game used to initialize a Game of Life.',
-			image: 'https://github.com/burrrata/tic-tac-toe/blob/master/tic-tac-toe.png?raw=true',
+			image: 'https://raw.githubusercontent.com/burrrata/tic-tac-toe/master/tic-tac-toe.png',
 		}
 
 		// Molochasaurus
