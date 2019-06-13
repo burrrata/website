@@ -1,34 +1,59 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-// Docusaurus Default Imports
 import React from 'react';
-import classnames from 'classnames';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import withBaseUrl from '@docusaurus/withBaseUrl';
-import styles from './styles.module.css';
 
-// My Custom Components
-import HomeSplash from './homesplash.js';
-import Highlights from './highlights.js';
-import Highlight from './components/highlight.js';
-//import HighlightsSection from './highlights-section.js';
-import RustyCryptoeconomics from './projects/rusty-cryptoeconomics.js';
-import Molochasaurus from './projects/molochasaurus.js';
-import TicTacToe from './projects/tic-tac-toe.js';
-
-// Why do we need these?
+// Why do we need a Regenerator Runtime?
 const fetch = require('node-fetch');
 const regeneratorRuntime =  require("regenerator-runtime");
 
 
-
+// a generic component that takes in parameters to display
+const Highlight = (props) => (
+		<div style={{
+        //background: 'black',  
+				//border: '2px solid red',
+				margin: '0 auto',
+				display: 'flex',
+				flexFlow: 'row nowrap',
+				flex: 'auto',
+				flexDirection: 'row',
+				justifyContent: 'space-between',
+				padding: '2vmin',
+				textAlign: 'center',
+				alignItems: 'center',
+				fontSize: '3vmin',
+				wordWrap: 'break-word',
+        minHeight: '50vmin',
+        minWidth: '80vmin',
+				}}>
+				<div style={{
+            //background: 'blue',
+            //color: '#fff',
+            flex: '0 0 50%',
+						}}>
+          <div style={{
+              paddingTop: '10vmin',
+            }}>
+            <h2>
+							{props.title}
+						</h2>
+            <p>
+              {props.description}
+            </p>
+          </div>
+				</div>
+				<div style={{
+            //background: 'green',
+            //color: '#fff',
+						flex: '0 0 50%',
+						}}>
+				<img style={{
+              width: '33vmin',
+              height: '33vmin',
+							borderRadius: '50%',
+						}}
+						src={props.image} />
+				</div>
+		</div>
+);
 
 
 // a component that holds stateful data and passes those to highlight components
@@ -60,69 +85,32 @@ class HighlightsSection extends React.Component {
   // render
   render () {
     
-    // generic APOD data 
-    const genericAPOD = {
+    // highlight 1
+    const highlight1 = {
       title: 'Here\'s an APOD:',
       description: 'Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter. The process of using filler text is sometimes called greeking, although the text itself may be nonsense, or largely Latin, as in Lorem ipsum.',
       image: 'https://apod.nasa.gov/apod/image/1905/Trumpler14_Hubble_960.jpg',
     };
 
-    // latest APOD data
-    const latestAPOD = {
+    // highlight 2
+    const highlight2 = {
       title: 'Here\'s today\'s APOD:',
       description: 'Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter. The process of using filler text is sometimes called greeking, although the text itself may be nonsense, or largely Latin, as in Lorem ipsum.',
       image: `${this.state.apod}`,
     };
-
-		// Rusty Cryptoeconomics
-		const rustyCryptoeconomics = {
-			title: 'Rusty Cryptoeconomics',
-			link: 'https://www.burrrata.ch/rusty_cryptoeconomics/intro.html',
-			description: 'How to roll a blockchain from scratch with Rust.',
-			image: 'https://github.com/burrrata/rusty_cryptoeconomics/raw/master/readme.jpg',
-		}
-
-		// Molochasaurus
-		const molochasaurus = {
-			title: 'Molochasaurus',
-			link: 'https://www.burrrata.ch/molochasaurus',
-			description: 'Everything related to the MolochDAO.',
-			image: 'https://github.com/burrrata/molochasaurus/blob/master/website/static/img/moloch-background.jpg?raw=true',
-		}
-
 
     // return the components in a container with a little padding
     return (
       <div style={{
           padding: '5vmin',
         }}>
-        <Highlight {...genericAPOD} />
-        <Highlight {...latestAPOD} />
-				<Highlight {...rustyCryptoeconomics} />
-				<Highlight {...molochasaurus} />
+        <Highlight {...highlight1} />
+        <Highlight {...highlight2} />
       </div>
     );
   }
 }
 
 
-
-// Homepage Component
-function Home() {
-
-	// useful stuff
-  const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
-
-
-
-	// return the components
-  return (
-    <Layout>
-			<HomeSplash />
-			<HighlightsSection />
-    </Layout>
-  );
-}
-
-export default Home;
+// export the component
+export default HightlightsSection

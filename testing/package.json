@@ -13,8 +13,10 @@
     "@docusaurus/core": "^2.0.0-alpha.19",
     "@docusaurus/preset-classic": "^2.0.0-alpha.19",
     "classnames": "^2.2.6",
+    "node-fetch": "^2.6.0",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "regenerator-runtime": "^0.13.2"
   },
   "browserslist": {
     "production": [
