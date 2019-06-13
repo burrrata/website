@@ -31,31 +31,9 @@ const HighlevelHighlight = (props) => (
 
 // a component that holds stateful data and passes those to HighlevelHighlight components
 function HighlevelHighlights() {
-	
-	// highlight 1
-	const highlight1 = {
-		title: 'Highlight 1',
-		description: 'Filler text is text that is random or otherwise generated.',
-		image: 'https://apod.nasa.gov/apod/image/1905/Trumpler14_Hubble_960.jpg',
-	};
-
-	// highlight 2
-	const highlight2 = {
-		title: 'Highlight 2',
-		description: 'Filler text is text that shares some characteristics of a real written text.',
-		image: 'https://apod.nasa.gov/apod/image/1903/F_JellyFish_FIN_APOD1024.jpg',
-	};
-	
-	// highlight 3
-	const highlight3 = {
-		title: 'Highlight 3',
-		description: 'Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated.',
-		image: 'https://apod.nasa.gov/apod/image/1905/CarinaWideField_Willasch_1080.jpg',
-	};
-
 	// return the components in a container with a little padding
 	return (
-	<div style={{
+		<div style={{
 			//background: 'black',  
 			//border: '1vmin solid red',
 			margin: '0 auto',
@@ -71,9 +49,6 @@ function HighlevelHighlights() {
 			minHeight: '50vmin',
 			minWidth: '80vmin',
 			}}>
-				<HighlevelHighlight {...highlight1} />
-				<HighlevelHighlight {...highlight2} />
-				<HighlevelHighlight {...highlight3} />
 		</div>
 	);
 }

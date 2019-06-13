@@ -4,7 +4,7 @@ import React from 'react';
 const Highlight = (props) => (
 		<div style={{
         //background: 'black',  
-				//border: '2px solid red',
+			  //border: '2px solid red',
 				margin: '0 auto',
 				display: 'flex',
 				flexFlow: 'row nowrap',
@@ -25,7 +25,7 @@ const Highlight = (props) => (
             flex: '0 0 50%',
 						}}>
           <div style={{
-              paddingTop: '10vmin',
+						//paddingTop: '5vmin',
             }}>
 						<a href={props.link}>
 							<h2>
