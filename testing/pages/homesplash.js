@@ -22,7 +22,15 @@ function HomeSplash() {
 
 	// return the components
 	return (
-		<header className={classnames('hero hero--dark', styles.header)}>
+		<header 
+			className={classnames('hero hero--dark', styles.header)}
+			style={{
+				backgroundSize: 'cover',
+				backgroundRepeat: 'no-repeat',
+				backgroundPosition: 'center',
+				backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Burrata2.jpg/1200px-Burrata2.jpg)',
+			}}
+		>
 			<div className="container">
 				<img 
 					src={withBaseUrl('img/burrrata.png')} 

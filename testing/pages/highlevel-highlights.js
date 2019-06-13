@@ -6,7 +6,7 @@ const HighlevelHighlight = (props) => (
       //border: '1vmin solid blue',
 			minWidth: '33vmin',
 			maxWidth: '50vmin',
-      padding: '1vmin',
+      padding: '3vmin',
       flex: 'auto',
       }}>
       <img style={{
@@ -16,11 +16,11 @@ const HighlevelHighlight = (props) => (
         borderRadius: '50%',
         }}
         src={props.image} />
-      <h3 style={{
+      <h2 style={{
         padding: '1vmin',
       }}>
         {props.title}
-      </h3>
+      </h2>
       <p style={{
         padding: '1vmin',
       }}>
@@ -34,21 +34,21 @@ function HighlevelHighlights() {
 	
 	// highlight 1
 	const highlight1 = {
-		title: 'Here\'s an APOD:',
-		description: 'Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated.',
+		title: 'Highlight 1',
+		description: 'Filler text is text that is random or otherwise generated.',
 		image: 'https://apod.nasa.gov/apod/image/1905/Trumpler14_Hubble_960.jpg',
 	};
 
 	// highlight 2
 	const highlight2 = {
-		title: 'Here\'s today\'s APOD:',
+		title: 'Highlight 2',
 		description: 'Filler text is text that shares some characteristics of a real written text.',
-		image: 'https://apod.nasa.gov/apod/image/1905/Trumpler14_Hubble_960.jpg',
+		image: 'https://apod.nasa.gov/apod/image/1903/F_JellyFish_FIN_APOD1024.jpg',
 	};
 	
 	// highlight 3
 	const highlight3 = {
-		title: 'Here\'s yet another APOD:',
+		title: 'Highlight 3',
 		description: 'Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated.',
 		image: 'https://apod.nasa.gov/apod/image/1905/CarinaWideField_Willasch_1080.jpg',
 	};
@@ -59,7 +59,7 @@ function HighlevelHighlights() {
 			//background: 'black',  
 			//border: '1vmin solid red',
 			margin: '0 auto',
-			padding: '3vmin',
+			padding: '5vmin',
 			display: 'flex',
 			flexDirection: 'row',
 			alignItems: 'space-between',
@@ -74,11 +74,6 @@ function HighlevelHighlights() {
 				<HighlevelHighlight {...highlight1} />
 				<HighlevelHighlight {...highlight2} />
 				<HighlevelHighlight {...highlight3} />
-				<HighlevelHighlight {...highlight2} />          
-				<HighlevelHighlight {...highlight2} />
-				<HighlevelHighlight {...highlight3} />
-				<HighlevelHighlight {...highlight2} />
-				<HighlevelHighlight {...highlight1} />
 		</div>
 	);
 }

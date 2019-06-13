@@ -117,7 +117,6 @@ function Home() {
   return (
     <Layout>
 			<HomeSplash />
-			<Highlights />
 			<HighlevelHighlights />
 			<HighlightsSection />
     </Layout>
