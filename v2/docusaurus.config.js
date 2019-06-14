@@ -55,7 +55,7 @@ module.exports = {
               to: 'docs/doc1',
             },
 						{
-							label: 'Services',
+							label: 'Areas Of Expertise',
 							to: 'docs/doc2',
 						},
 						{

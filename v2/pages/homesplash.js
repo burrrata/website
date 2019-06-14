@@ -41,7 +41,9 @@ function HomeSplash() {
 				<p className="hero__subtitle">
 					{siteConfig.tagline}
 				</p>
-				<div className={styles.buttons}>
+				<div 
+					className={styles.buttons}
+				>
 					<Link
 						className={classnames(
 							'button button--outline button--primary button--lg buttonPadding',
