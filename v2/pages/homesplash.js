@@ -8,10 +8,6 @@ import withBaseUrl from '@docusaurus/withBaseUrl';
 import styles from './styles.module.css';
 
 
-
-
-
-
 // Header Component
 function HomeSplash() {
 
@@ -46,7 +42,7 @@ function HomeSplash() {
 				>
 					<Link
 						className={classnames(
-							'button button--outline button--primary button--lg buttonPadding',
+							'button button--outline button--primary button--lg',
 							styles.getStarted,
 						)}
 						style={{
