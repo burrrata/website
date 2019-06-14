@@ -99,7 +99,44 @@ const HighlevelHighlight = (props) => (
 );
 
 
+/*
 // stateful component that gets the URL for the latest APOD image and displays it in an img
+// - w React class
+class LatestAPOD extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      apod: null,
+    };
+  }
+  componentDidMount() {
+    this.getLatestAPOD()
+  }
+  async getLatestAPOD() {
+    //const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=ExE5PaDrbnGZ8yZfAXdWF4cd4vw9sB8QcKMNVrUg';
+		const APOD_API = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY';
+		let response = await fetch(APOD_API);
+		let data = await response.json();
+	  let url = await data.url;
+    this.setState({
+      apod: url
+    })
+  }
+  render () {
+		const latestAPOD = {
+			title: 'Here\'s today\'s APOD:',
+			link: 'https://apod.nasa.gov',
+			description: 'Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter. The process of using filler text is sometimes called greeking, although the text itself may be nonsense, or largely Latin, as in Lorem ipsum.',
+			image: `${this.state.apod}`,
+		};
+    return (
+        <Highlight {...latestAPOD} />
+    );
+  }
+}
+*/
+// stateful component that gets the URL for the latest APOD image and displays it in an img
+// - w hooks
 function LatestAPOD() {
 	// init state
 	const [APOD, setAPOD] = useState(null);
@@ -111,7 +148,6 @@ function LatestAPOD() {
 		const data = await response.json();
 		const url = await data.url;
 		return url
-		//setAPOD(url)
 	}
   // useEffect to get the APOD API data
   useEffect(() => {
