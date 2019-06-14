@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[24],{38:function(h){h.exports={permalink:"/highlevel-highlights",source:"/home/deliciousdohnuts/burrrata.ch/v2-test/pages/highlevel-highlights.js"}}}]);
