@@ -6,7 +6,7 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import withBaseUrl from '@docusaurus/withBaseUrl';
-import styles from '../styles.module.css';
+import styles from '../../styles.module.css';
 
 
 

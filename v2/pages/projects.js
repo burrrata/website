@@ -3,6 +3,49 @@
 // note: the version here is old and copied from Docusaurus V1
 
 
+
+/*
+// Placeholder
+const PROJECTS = null;
+// Showcase Component
+const Showcase = () => {
+	// Don't display the showcase if there are no items
+	if ((PROJECTS.project || []).length === 0) {
+		return null;
+	}
+	// Process the items
+	const showcase = PROJECTS.project
+		.filter(project => project.pinned)
+		.map(project => (
+			<a href={project.infoLink} key={project.infoLink}>
+				<img src={project.image} alt={project.caption} title={project.caption} />
+			</a>
+		));
+	// Return the showcase items
+	return (
+		<div>
+			<h2>
+				More Projects
+			</h2>
+			<p>
+				Here's more things I've built or contributed to
+			</p>
+			<div>
+				{showcase}
+			</div>
+			<div>
+				<a 
+					className="button" 
+					href=''
+				>
+					More Projects 
+				</a>
+			</div>
+		</div>
+	);
+};
+*/
+
 /*
 const React = require('react');
 const CompLibrary = require('../../core/CompLibrary.js');
