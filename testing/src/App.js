@@ -301,14 +301,13 @@ const MyHighlights = (props) => (
 
 
 // WHY DOES THIS NOT WORK?
+/*
 // Testing another architecture for a generic Highlights component
 function GenericHighlights(data) {
-
 	// if the input data is empty, do nothing
 	if (data.length === 0) {
 		return null;
 	}
-
 	// iterate through the data
 	const showcase = data.map(project => (
 		<a 
@@ -332,7 +331,6 @@ function GenericHighlights(data) {
 			</p>
 		</a>
 	));
-
 	// return the components
 	return (
 		<div 
@@ -379,7 +377,7 @@ function GenericHighlights(data) {
 		</div>
 	);
 }
-
+*/
 
 
 
@@ -389,7 +387,6 @@ function App() {
   return (
     <div className="App">
 			<Clock />
-			<GenericHighlights {...myHighlightsData} />
 			<MyHighlights />
       <Highlight {...testingAPOD} />
 			<LatestAPOD />
