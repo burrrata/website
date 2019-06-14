@@ -127,9 +127,9 @@ function LatestAPOD() {
 // a generic component that takes in parameters to display
 const MainHighlight = (props) => (
 		<div style={{
-        //background: 'black',  
-			  //border: '2px solid red',
+			  //border: '1vmin solid red',
 				margin: '0 auto',
+				padding: '5vmin',
 				display: 'flex',
 				flexFlow: 'row nowrap',
 				flex: 'auto',
@@ -144,26 +144,20 @@ const MainHighlight = (props) => (
         minWidth: '80vmin',
 				}}>
 				<div style={{
-            //background: 'blue',
-            //color: '#fff',
+						//border: '1vmin solid blue',
             flex: '0 0 50%',
 						}}>
-          <div style={{
-						//paddingTop: '5vmin',
-            }}>
-						<a href={props.link}>
-							<h2>
-								{props.title}
-							</h2>
-						</a>
-            <p>
-              {props.description}
-            </p>
-          </div>
+					<a href={props.link}>
+						<h2>
+							{props.title}
+						</h2>
+					</a>
+					<p>
+						{props.description}
+					</p>
 				</div>
 				<div style={{
-            //background: 'green',
-            //color: '#fff',
+						//border: '1vmin solid green',
 						flex: '0 0 50%',
 						}}>
 				<a href={props.link}>
@@ -182,9 +176,7 @@ const MainHighlight = (props) => (
 function MainHighlightsContainer() {
 	// return the components in a container with a little padding
 	return (
-		<div style={{
-				padding: '5vmin',
-			}}>
+		<div>
 			<MainHighlight {...testData} />
 		</div>
 	);
@@ -211,63 +203,64 @@ const MainHighlights = (props) => {
 // OLD VERSION w messed up formatting
 // a generic component that takes in data to display
 const MainHighlights = (props) => (
-	<div style={{
-		padding: '5vmin',
-	}}>
+	<div>
 		<LatestAPOD />
+		<div>
 		{mainHighlightsData && mainHighlightsData.length && (
-		<div style={{
-        //background: 'black',  
-			  //border: '2px solid red',
-				margin: '0 auto',
-				display: 'flex',
-				flexFlow: 'row nowrap',
-				flex: 'auto',
-				flexDirection: 'row',
-				justifyContent: 'space-between',
-				padding: '2vmin',
-				textAlign: 'center',
-				alignItems: 'center',
-				fontSize: '3vmin',
-				wordWrap: 'break-word',
-        minHeight: '50vmin',
-        minWidth: '80vmin',
-				}}>
+			<div style={{
+					padding: '5vmin',
+					}}>
 				{mainHighlightsData.map(({image, title, link, description}, idx) => (
-					<div key={`landing-page-highlight-${idx}`}>
-						<div style={{
-								//background: 'blue',
-								//color: '#fff',
-								flex: '0 0 50%',
-								}}>
-							<a href={link}>
-								<h2>
-									{title}
-								</h2>
-							</a>
-							<p>
-								{description}
-							</p>
-						</div>
-						<div style={{
-								//background: 'green',
-								//color: '#fff',
-								flex: '0 0 50%',
-								}}>
-							<a href={link}>
-								<img style={{
-											width: '33vmin',
-											height: '33vmin',
-											borderRadius: '50%',
-										}}
-										alt={title}
-										src={image} />
-							</a>
-						</div>
+					<div style={{
+						//border: '1vmin solid red',
+						margin: '0 auto',
+						display: 'flex',
+						flexFlow: 'row nowrap',
+						flex: 'auto',
+						flexDirection: 'row',
+						justifyContent: 'space-between',
+						padding: '2vmin',
+						textAlign: 'center',
+						alignItems: 'center',
+						fontSize: '3vmin',
+						wordWrap: 'break-word',
+						minHeight: '50vmin',
+						minWidth: '80vmin',
+						}} 
+						key={`landing-page-highlight-${idx}`}
+					>
+					<div style={{
+						//border: '1vmin solid blue',
+						flex: '0 0 50%',
+						}}>
+						<a href={link}>
+							<h2>
+								{title}
+							</h2>
+						</a>
+						<p>
+							{description}
+						</p>
 					</div>
+					<div style={{
+							//border: '1vmin solid green',
+							flex: '0 0 50%',
+							}}>
+						<a href={link}>
+							<img style={{
+								width: '33vmin',
+								height: '33vmin',
+								borderRadius: '50%',
+								}}
+								alt={title}
+								src={image} />
+						</a>
+					</div>
+				</div>
 				))}
 		</div>
 		)};
+	</div>
 	</div>
 );
 

@@ -91,7 +91,7 @@ const HighlevelHighlights = (props) => (
 	<div>
 		{highlevelHighlightsData && highlevelHighlightsData.length && (
 			<div style={{
-				border: '1vmin solid red',
+				//border: '1vmin solid red',
 				margin: '0 auto',
 				padding: '5vmin',
 				display: 'flex',
@@ -107,7 +107,7 @@ const HighlevelHighlights = (props) => (
 				}}>
 				{highlevelHighlightsData.map(({title, description, image}, idx) => (
 					<div style={{
-						border: '1vmin solid blue',
+						//border: '1vmin solid blue',
 						minWidth: '33vmin',
 						maxWidth: '50vmin',
 						padding: '3vmin',
