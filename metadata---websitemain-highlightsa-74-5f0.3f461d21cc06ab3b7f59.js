@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[26],{44:function(i){i.exports={permalink:"websitemain-highlights",source:"/home/deliciousdohnuts/burrrata.ch/v2-test/pages/main-highlights.js"}}}]);
