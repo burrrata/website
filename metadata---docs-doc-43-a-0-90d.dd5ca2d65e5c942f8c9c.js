@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[22],{58:function(e){e.exports={id:"doc4",title:"Other Document",description:"this is another document",source:"/home/deliciousdohnuts/burrrata.ch/v2-test/docs/exampledoc4.md",permalink:"/docs/doc4",sidebar:"docs-other",category:"First Category",next:"style-guide",next_title:"Style Guide"}}}]);
