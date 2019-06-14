@@ -208,8 +208,8 @@ const MainHighlights = (props) => (
 		<div>
 		{mainHighlightsData && mainHighlightsData.length && (
 			<div style={{
-					padding: '5vmin',
-					}}>
+				padding: '5vmin',
+				}}>
 				{mainHighlightsData.map(({image, title, link, description}, idx) => (
 					<div style={{
 						//border: '1vmin solid red',
@@ -227,36 +227,35 @@ const MainHighlights = (props) => (
 						minHeight: '50vmin',
 						minWidth: '80vmin',
 						}} 
-						key={`landing-page-highlight-${idx}`}
-					>
-					<div style={{
-						//border: '1vmin solid blue',
-						flex: '0 0 50%',
-						}}>
-						<a href={link}>
-							<h2>
-								{title}
-							</h2>
-						</a>
-						<p>
-							{description}
-						</p>
-					</div>
-					<div style={{
-							//border: '1vmin solid green',
+						key={`landing-page-highlight-${idx}`}>
+						<div style={{
+							//border: '1vmin solid blue',
 							flex: '0 0 50%',
 							}}>
-						<a href={link}>
-							<img style={{
-								width: '33vmin',
-								height: '33vmin',
-								borderRadius: '50%',
-								}}
-								alt={title}
-								src={image} />
-						</a>
+							<a href={link}>
+								<h2>
+									{title}
+								</h2>
+							</a>
+							<p>
+								{description}
+							</p>
+						</div>
+						<div style={{
+								//border: '1vmin solid green',
+								flex: '0 0 50%',
+								}}>
+							<a href={link}>
+								<img style={{
+									width: '33vmin',
+									height: '33vmin',
+									borderRadius: '50%',
+									}}
+									alt={title}
+									src={image} />
+							</a>
+						</div>
 					</div>
-				</div>
 				))}
 		</div>
 		)};
