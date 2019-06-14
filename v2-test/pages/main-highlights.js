@@ -1,6 +1,7 @@
 //import React from 'react';
 import React, {Component, useState, useEffect} from 'react';
 
+// import "babel-polyfill";
 // Why do we need these for stateful components?
 //const fetch = require('node-fetch');
 //const regeneratorRuntime =  require("regenerator-runtime");

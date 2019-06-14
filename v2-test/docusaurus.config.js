@@ -4,12 +4,12 @@ module.exports = {
 	organizationName: 'burrrata',
 	projectName: 'website',
 	////////////////////////////////////
+	// for local development
+	//url: 'https://your-docusaurus-test-site.com',
+	//baseUrl: '/',
 	// for publishing to gh-pages branch
 	url: 'https://burrrata.github.io',
-	baseUrl: 'website',
-	// for local development
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+	baseUrl: '/website/',
 	///////////////////////////
   favicon: 'img/favicon.ico',
   themeConfig: {
