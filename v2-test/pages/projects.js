@@ -3,6 +3,13 @@ import React from 'react';
 
 // projects data
 const projectsData = [
+	// Molochasaurus
+	{
+		title: 'Molochasaurus',
+		image: 'https://github.com/burrrata/molochasaurus/blob/master/website/static/img/moloch-background.jpg?raw=true',
+		link: 'https://www.burrrata.ch/molochasaurus/',
+		pinned: true,
+	},
 	// 1Hive 
 	{
 		title: '1Hive',
@@ -24,6 +31,13 @@ const projectsData = [
 		link: 'https://github.com/burrrata/meta',
 		pinned: true,
 	},
+	// Image Viewer
+	{
+		title: 'Image Viewer',
+		image: 'https://apod.nasa.gov/apod/image/1904/M87bh_EHT_2629.jpg',
+		link: 'https://www.burrrata.ch/image-viewer/',
+		pinned: true,
+	},
 	// APOD Archive Scraper
 	{
 		title: 'APOD Archive Scraper',
@@ -38,32 +52,18 @@ const projectsData = [
 		link: 'https://github.com/ethereum-magicians/integrity-ring',
 		pinned: true,
 	},
+	// Are We There Yet
+	{
+		title: 'Are We There Yet',
+		image: 'https://raw.githubusercontent.com/burrrata/are_we_there_yet/master/are%20we%20there%20yet.png',
+		link: 'https://www.burrrata.ch/are_we_there_yet/',
+		pinned: true,
+	},
 	// Research
 	{
 		title: 'research',
 		image: 'https://assets4.bigthink.com/system/tinymce_assets/3261/original/thinker.jpg?1471139663',
 		link: 'https://github.com/burrrata/research',
-		pinned: true,
-	},
-	// placeholder project 1
-	{
-	title: 'Placeholder Project 1',
-	image: 'https://apod.nasa.gov/apod/image/1905/Trumpler14_Hubble_960.jpg',
-	link: 'https://apod.nasa.gov/',
-	pinned: true,
-	},
-	// placeholder project 2
-	{
-		title: 'Placeholder Project 2',
-		image: 'https://apod.nasa.gov/apod/image/1903/F_JellyFish_FIN_APOD1024.jpg',
-		link: 'https://apod.nasa.gov/',
-		pinned: true,
-	},
-	// placeholder project 3
-	{
-		title: 'Placeholder Project 3',
-		image: 'https://apod.nasa.gov/apod/image/1905/CarinaWideField_Willasch_1080.jpg',
-		link: 'https://apod.nasa.gov/',
 		pinned: true,
 	},
 ];
@@ -76,8 +76,8 @@ const ProjectHighlights = (props) => (
 			padding: '1vmin',
 			textAlign: 'center',
 		}}>
-			<h2>More Projects</h2>
-			<p>Here's some more things I've built or contributed to</p>
+			<h2>More Stuff</h2>
+			<p>More things I've built or contributed to</p>
 		</div>
 		{projectsData && projectsData.length && (
 			<div style={{

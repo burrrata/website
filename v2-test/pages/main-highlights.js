@@ -39,12 +39,14 @@ const mainHighlightsData = [
 		image: 'https://raw.githubusercontent.com/burrrata/tic-tac-toe/master/tic-tac-toe.png',
 	},
 	// Molochasaurus
+	/*
 	{
 		title: 'Molochasaurus',
 		link: 'https://www.burrrata.ch/molochasaurus',
 		description: 'Everything related to the MolochDAO.',
 		image: 'https://github.com/burrrata/molochasaurus/blob/master/website/static/img/moloch-background.jpg?raw=true',
 	},
+	*/
 ];
 
 
