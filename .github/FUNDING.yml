@@ -9,4 +9,4 @@ community_bridge: # Replace with a single Community Bridge project-name e.g., cl
 liberapay: # Replace with a single Liberapay username
 issuehunt: # Replace with a single IssueHunt username
 otechie: # Replace with a single Otechie username
-custom: 0x25B4c6Cc79e2A149Ad266E7f3CB8094b6865AF31 # Replace with a single custom sponsorship URL
+custom: https://blockscout.com/eth/mainnet/address/0x25b4c6cc79e2a149ad266e7f3cb8094b6865af31/transactions # Replace with a single custom sponsorship URL
