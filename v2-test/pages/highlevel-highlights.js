@@ -1,7 +1,6 @@
 import React from 'react';
 
 
-
 // test data
 const testData = {
 	title: 'Test Data',
@@ -137,10 +136,6 @@ const HighlevelHighlights = (props) => (
 		)};
 	</div>
 );
-
-
-
-
 
 // export the component
 export default HighlevelHighlights
