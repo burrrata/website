@@ -10,6 +10,41 @@ const projectsData = [
 		link: 'https://1hive.org/',
 		pinned: true,
 	},
+	// Aragon Cooperative
+	{
+		title: 'Aragon Cooperative',
+		image: 'https://avatars1.githubusercontent.com/u/46876207?s=200&v=4',
+		link: 'https://mainnet.aragon.org/#/0x940B2B518F761f4c52CDd9865C57D9a907DC5E82/',
+		pinned: true,
+	},
+	// Meta
+	{
+		title: 'meta',
+		image: 'https://waitbutwhy.com/wp-content/uploads/2018/04/How-do-you-work-4.png',
+		link: 'https://github.com/burrrata/meta',
+		pinned: true,
+	},
+	// APOD Archive Scraper
+	{
+		title: 'APOD Archive Scraper',
+		image: 'https://apod.nasa.gov/apod/image/1906/Mice_LRGB_web.jpg',
+		link: 'https://github.com/burrrata/apod-archive-scraper',
+		pinned: true,
+	},
+	// Ethereum Magicians: integrity ring
+	{
+		title: 'Ethereum Magicians: integrity ring',
+		image: 'https://ethereumevents.global/assets/fellowship-logomark.png',
+		link: 'https://github.com/ethereum-magicians/integrity-ring',
+		pinned: true,
+	},
+	// Research
+	{
+		title: 'research',
+		image: 'https://assets4.bigthink.com/system/tinymce_assets/3261/original/thinker.jpg?1471139663',
+		link: 'https://github.com/burrrata/research',
+		pinned: true,
+	},
 	// placeholder project 1
 	{
 	title: 'Placeholder Project 1',
@@ -22,13 +57,6 @@ const projectsData = [
 		title: 'Placeholder Project 2',
 		image: 'https://apod.nasa.gov/apod/image/1903/F_JellyFish_FIN_APOD1024.jpg',
 		link: 'https://apod.nasa.gov/',
-		pinned: true,
-	},
-	// Aragon Cooperative
-	{
-		title: 'Aragon Cooperative',
-		image: 'https://avatars1.githubusercontent.com/u/46876207?s=200&v=4',
-		link: 'https://mainnet.aragon.org/#/0x940B2B518F761f4c52CDd9865C57D9a907DC5E82/',
 		pinned: true,
 	},
 	// placeholder project 3
