@@ -3,28 +3,39 @@ import React from 'react';
 
 // projects data
 const projectsData = [
-	// project 1
+	// 1Hive 
 	{
-		title: 'Project 1',
-		description: 'Filler text is text that is random or otherwise generated.',
-		image: 'https://apod.nasa.gov/apod/image/1905/Trumpler14_Hubble_960.jpg',
-		link: '',
+		title: '1Hive',
+		image: 'https://avatars3.githubusercontent.com/u/29875830?s=200&v=4',
+		link: 'https://1hive.org/',
 		pinned: true,
 	},
-	// project 2
+	// placeholder project 1
 	{
-		title: 'Project 2',
-		description: 'Filler text is text that shares some characteristics of a real written text.',
+	title: 'Placeholder Project 1',
+	image: 'https://apod.nasa.gov/apod/image/1905/Trumpler14_Hubble_960.jpg',
+	link: 'https://apod.nasa.gov/',
+	pinned: true,
+	},
+	// placeholder project 2
+	{
+		title: 'Placeholder Project 2',
 		image: 'https://apod.nasa.gov/apod/image/1903/F_JellyFish_FIN_APOD1024.jpg',
-		link: '',
+		link: 'https://apod.nasa.gov/',
 		pinned: true,
 	},
-	// project 3
+	// Aragon Cooperative
 	{
-		title: 'Project 3',
-		description: 'Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated.',
+		title: 'Aragon Cooperative',
+		image: 'https://avatars1.githubusercontent.com/u/46876207?s=200&v=4',
+		link: 'https://mainnet.aragon.org/#/0x940B2B518F761f4c52CDd9865C57D9a907DC5E82/',
+		pinned: true,
+	},
+	// placeholder project 3
+	{
+		title: 'Placeholder Project 3',
 		image: 'https://apod.nasa.gov/apod/image/1905/CarinaWideField_Willasch_1080.jpg',
-		link: '',
+		link: 'https://apod.nasa.gov/',
 		pinned: true,
 	},
 ];
@@ -33,7 +44,14 @@ const projectsData = [
 // Automagically turns the highlevelHighlightsData into components
 const ProjectHighlights = (props) => (
 	<div>
-		{proejectsData && projectsData.length && (
+		<div style={{
+			padding: '1vmin',
+			textAlign: 'center',
+		}}>
+			<h2>More Projects</h2>
+			<p>Here's some more things I've built or contributed to</p>
+		</div>
+		{projectsData && projectsData.length && (
 			<div style={{
 				//border: '1vmin solid red',
 				margin: '0 auto',
@@ -49,32 +67,27 @@ const ProjectHighlights = (props) => (
 				minHeight: '50vmin',
 				minWidth: '80vmin',
 				}}>
-				{projectsData.map(({title, description, image, link, pinned}, idx) => (
+				{projectsData
+					.filter(item => item.pinned === true)
+					.map(({title, description, image, link, pinned}, idx) => (
 					<div style={{
 						//border: '1vmin solid blue',
-						minWidth: '33vmin',
-						maxWidth: '50vmin',
+						minWidth: '18.5vmin',
+						maxWidth: '30vmin',
 						padding: '3vmin',
 						flex: 'auto',
 						}}
-						key={`highlevel-highlight-${idx}`}>
-						<img style={{
-							padding: '1vmin',
-							width: '21vmin',
-							height: '21vmin',
-							borderRadius: '50%',
-							}}
-							src={image} />
-						<h2 style={{
-							padding: '1vmin',
-						}}>
-							{title}
-						</h2>
-						<p style={{
-							padding: '1vmin',
-						}}>
-							{description}
-						</p>
+						key={`project-highlight-${idx}`}>
+						<a href={link}>
+							<img style={{
+								padding: '1vmin',
+								width: '21vmin',
+								height: '21vmin',
+								borderRadius: '50%',
+								}}
+								src={image} 
+								alt={title}/>
+						</a>
 					</div>
 				))}
 			</div>
