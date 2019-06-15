@@ -5,11 +5,11 @@ module.exports = {
 	projectName: 'website',
 	////////////////////////////////////
 	// for local development
-	//url: 'https://your-docusaurus-test-site.com',
-	//baseUrl: '/',
+	url: 'https://your-docusaurus-test-site.com',
+	baseUrl: '/',
 	// for publishing to gh-pages branch
-	url: 'https://burrrata.github.io',
-	baseUrl: '/website/',
+	//url: 'https://burrrata.github.io',
+	//baseUrl: '/website/',
 	///////////////////////////
   favicon: 'img/favicon.ico',
   themeConfig: {

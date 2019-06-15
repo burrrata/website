@@ -11,6 +11,7 @@ import styles from './styles.module.css';
 import HomeSplash from './homesplash.js';
 import HighlevelHighlights from './highlevel-highlights.js';
 import MainHighlights from './main-highlights.js';
+import ProjectHighlights from './projects.js';
 
 // Homepage Component
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
 			<HomeSplash />
 			<HighlevelHighlights />
 			<MainHighlights />
+			<ProjectHighlights />
     </Layout>
   );
 }

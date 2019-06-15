@@ -2,9 +2,10 @@
 import React, {Component, useState, useEffect} from 'react';
 
 // Why do we need these for stateful components?
-const fetch = require('node-fetch');
-const regeneratorRuntime =  require("regenerator-runtime");
-
+//const fetch = require('node-fetch');
+//const regeneratorRuntime =  require("regenerator-runtime");
+import fetch from 'node-fetch';
+import regeneratorRuntime from 'regenerator-runtime';
 
 // test data
 const testData = {
