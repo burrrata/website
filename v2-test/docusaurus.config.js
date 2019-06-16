@@ -65,12 +65,20 @@ module.exports = {
               href: 'https://www.reddit.com/user/burrrata',
             },
 						{
+							label: 'Keybase',
+							href: 'https://keybase.io/burrrata'
+						},
+						{
 							label: 'Riot',
 							href: '@burrrata:matrix.org'
 						},
 						{
-							label: 'Keybase',
-							href: 'https://keybase.io/burrrata'
+							label: 'ethresear.ch',
+							href: 'https://ethresear.ch/u/burrrata/summary',
+						},
+						{
+							label: 'forum.aragon.org',
+							href: 'https://forum.aragon.org/u/burrrata/summary',
 						},
           ],
         },
@@ -79,16 +87,16 @@ module.exports = {
           items: [
 						{
 							label: 'Projects',
-							to: 'docs/doc1',
+							to: 'projects',
+						},
+						{
+							label: 'GitHub',
+							href: 'https://github.com/burrrata',
 						},
             {
               label: 'Blog',
               to: 'blog',
             },
-						{
-							label: 'GitHub',
-							href: 'https://github.com/burrrata',
-						},
           ],
         },
       ],
