@@ -69,10 +69,6 @@ module.exports = {
 							href: 'https://keybase.io/burrrata'
 						},
 						{
-							label: 'Riot',
-							href: '@burrrata:matrix.org'
-						},
-						{
 							label: 'ethresear.ch',
 							href: 'https://ethresear.ch/u/burrrata/summary',
 						},
