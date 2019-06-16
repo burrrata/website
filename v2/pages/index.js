@@ -22,7 +22,6 @@ function Home() {
 			<HomeSplash />
 			<HighlevelHighlights />
 			<TicTacToeApp />
-			<MainHighlights />
 			<ProjectHighlights />
     </Layout>
   );
