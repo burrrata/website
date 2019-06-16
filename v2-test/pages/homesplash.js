@@ -49,7 +49,7 @@ function HomeSplash() {
 							background: 'white',
 							border: 'solid 0.5vmin',
 						}}
-						to={withBaseUrl('docs/doc1')}>
+						to={withBaseUrl('docs/about')}>
 						Let's build the future
 					</Link>
 				</div>

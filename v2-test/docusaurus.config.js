@@ -32,7 +32,7 @@ module.exports = {
 				},
         {
           label: 'Work With Me',
-					to: 'docs/bio',
+					to: 'docs/about',
           position: 'left',
         },
       ],
