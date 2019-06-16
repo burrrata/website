@@ -10,9 +10,8 @@ import styles from './styles.module.css';
 // My Custom Components
 import HomeSplash from './homesplash.js';
 import HighlevelHighlights from './highlevel-highlights.js';
-import MainHighlights from './main-highlights.js';
-import {ProjectHighlights} from './projects.js';
 import TicTacToeApp from './tic-tac-toe.js';
+import {ProjectHighlights} from './projects.js';
 
 // Homepage Component
 function Home() {
