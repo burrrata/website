@@ -12,6 +12,7 @@ import HomeSplash from './homesplash.js';
 import HighlevelHighlights from './highlevel-highlights.js';
 import MainHighlights from './main-highlights.js';
 import {ProjectHighlights} from './projects.js';
+import TicTacToeApp from './tic-tac-toe.js';
 
 // Homepage Component
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
     <Layout>
 			<HomeSplash />
 			<HighlevelHighlights />
+			<TicTacToeApp />
 			<MainHighlights />
 			<ProjectHighlights />
     </Layout>

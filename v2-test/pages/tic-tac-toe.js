@@ -1,6 +1,4 @@
-// Docusaurus Default Imports
 import React from 'react';
-
 
 
 
@@ -75,15 +73,6 @@ const BOARD_SIZE = 9;
 
 
 
-// General App Functions:
-// - functions that are generally useful across the app
-//////////////////////////////////////////////////////////
-
-// Canary that disappears if there's a breaking error
-function Canary() {
-  return <div className='canary'>{'🐤'}</div>;
-}
-
 // Global Keys
 // Create a global counter to create new keys for the app
 let globalKeyCount = 0;
@@ -103,9 +92,13 @@ function createKey() {
 //////////////////////////////////////////////////////////
 
 // Create a cell from a numerical value
-const TTTCell = (value) => (
-    // where value is either 0 or 1
-    <td className={`${value.value === 1 ? 'cell alive' : 'cell dead'}`}></td>
+const TTTCell = (props) => (
+  // where props is either 0 or 1
+	// 1 is alive
+	// 0 is dead
+	<td style={{
+		background: `${props.value === 1 ? 'black' : 'white'}`,	
+	}}></td>
 );
 
 // Create a row in a table from an array
@@ -114,7 +107,7 @@ function TTTRow(props) {
   for (let i=0; i<props.value.length; i++) {
     row.push(<TTTCell value={props.value[i]} key={createKey()} />);
   }
-  return <tr className='row'>{row}</tr>
+  return <tr>{row}</tr>
 }
 
 // Create a table from an array of arrays (grid)
@@ -123,7 +116,21 @@ function TTTTable(props) {
   for (let i=0; i<props.value.length; i++) {
     table.push(<TTTRow value={props.value[i]} key={createKey()}/>);
   }
-  return <table className='table'><tbody>{table}</tbody></table>
+	return (
+		<table 
+			style={{
+				flex: 'auto',
+				margin: '0 auto',
+				justifyContent: 'center',
+				alignItems: 'center',
+				borderCollapse: 'collapse',
+				fontSize: '0',
+			}}
+			className='table'>
+			<tbody>
+				{table}
+			</tbody>
+		</table>);
 }
 
 
@@ -344,7 +351,14 @@ function endGame(squares) {
 // Creates a clickable square button
 function Square(props) {
   return (
-    <button className="click-square" onClick={props.onClick} id={props.value}>
+		<button 
+			style={{
+				width: '10vmin',
+				height: '10vmin',
+			}}
+			className="click-square" 
+			onClick={props.onClick} 
+			id={props.value}>
     </button>
   );
 }
@@ -578,8 +592,26 @@ class Board extends React.Component {
     //    - Tic Tac Toe Triage 4 has some code that does this
     return (
       <div>
-        <div className='over'>
-          <div className='table'>
+				<div 
+					style={{
+						position: 'relative', // was absolute
+						left: '9%',
+						right: '9%',
+						zIndex: '2',
+						opacity: '0',
+						//border: '5px solid red',
+					}}
+					className='over'>
+					<div
+						style={{
+							flex: 'auto',
+							margin: '0 auto',
+							justifyContent: 'center',
+							alignItems: 'center',
+							borderCollapse: 'collapse',
+							fontSize: '0',
+						}}
+						className='table'>
             <div>
               {this.renderSquare(0)}
               {this.renderSquare(1)}
@@ -597,7 +629,13 @@ class Board extends React.Component {
             </div>            
           </div>
         </div>
-        <div className='under'>
+				<div 
+					style={{
+					  position: 'relative',
+						zIndex: '1',
+						//border: '5px solid yellow',
+					}}
+					className='under'>
           <TTTTable value={this.state.grid}/>
         </div>
       </div>
@@ -650,109 +688,24 @@ function randomMove(squares) {
 class TicTacToeApp extends React.Component {
   render() {
     return (
-      <div className='app'>
-        <div className='app-body'>
-          <div className='app-body-div'>
-            <Board />
-          </div>
-        </div>
+			<div 
+				style={{
+					margin: '0 auto',
+					padding: '5vmin',
+				  flex: 'auto',
+					flexDirection: 'row',
+					justifyContent: 'center',
+					alignItems: 'center',
+					fontSize: '1vmin',
+					textAlign: 'center',
+				}}
+				className='app'>
+				<Board />
       </div>
     );
   }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// A container for the Tic Tac Toe board 
-function TicTacToeContainer() {
-	return(
-		<div
-			style={{
-				float: 'right', 
-			}}
-		>
-			<div 
-				style = {{
-					display: 'grid',
-					height: '100%',
-				}}
-			>
-				<div
-					style = {{
-						maxWidth: '25vw',
-						maxHeight: '25vw',
-						margin: 'auto',
-					}}
-				>
-					<TicTacToeApp />	
-				</div>
-			</div>
-		</div>
-	)
-}
-
-
-const	projectTextHeader = 'Tic Tac Toe'
-const projectTextBody = 'Play to win a prize.'
-const	projectLink = 'https://www.burrrata.ch/tic-tac-toe'
-
-
-
-// Text area with title and body
-function Text(props) {
-	return (
-		<div 
-			style={{
-				float: 'left',
-				textAlign: 'left',
-			}}
-		>
-			<a href={props.projectLink}>
-				<h2>
-					{props.projectTextHeader}
-				</h2>
-			</a>
-			<br />
-			<p>
-				{props.projectTextBody}
-			</p>
-		</div>
-	);
-}
-
-
-// Generic App Section Component
-function TicTacToe() {
-	return (
-		<div className='projectContainer'>
-			<Text 
-				projectLink={projectLink}
-				projectTextHeader={projectTextHeader}
-				projectTextBody={projectTextBody}
-			/>
-			<TicTacToeContainer />
-		</div>
-	);
-}
-
-
 // This component is meant to be a template that you copy/paste and modify, not export and use directly
-export default TicTacToe
+export default TicTacToeApp
