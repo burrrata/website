@@ -3,37 +3,47 @@ import React from 'react';
 
 // projects data
 const projectsData = [
-	// Molochasaurus
+	// Meta
 	{
-		title: 'Molochasaurus',
-		image: 'https://github.com/burrrata/molochasaurus/blob/master/website/static/img/moloch-background.jpg?raw=true',
-		link: 'https://www.burrrata.ch/molochasaurus/',
+		title: 'meta',
+		tagline: 'Things that make it easier to learn about and use new technologies.',
+		description: '',
+		image: 'https://waitbutwhy.com/wp-content/uploads/2018/04/How-do-you-work-4.png',
+		link: 'https://github.com/burrrata/meta',
 		pinned: true,
 	},
 	// 1Hive 
 	{
 		title: '1Hive',
+		tagline: 'Helping Open Source Communities Thrive',
+		description: '1Hive is a decentralized autonomous organization working to grow an open source commons and improve open source sustainability.',
 		image: 'https://avatars3.githubusercontent.com/u/29875830?s=200&v=4',
 		link: 'https://1hive.org/',
+		pinned: true,
+	},
+	// Molochasaurus
+	{
+		title: 'Molochasaurus',
+		tagline: 'Everything related to the MolochDAO.',
+		description: '',
+		image: 'https://github.com/burrrata/molochasaurus/blob/master/website/static/img/moloch-background.jpg?raw=true',
+		link: 'https://www.burrrata.ch/molochasaurus',
 		pinned: true,
 	},
 	// Aragon Cooperative
 	{
 		title: 'Aragon Cooperative',
+		tagline: '',
+		description: '',
 		image: 'https://avatars1.githubusercontent.com/u/46876207?s=200&v=4',
 		link: 'https://mainnet.aragon.org/#/0x940B2B518F761f4c52CDd9865C57D9a907DC5E82/',
-		pinned: true,
-	},
-	// Meta
-	{
-		title: 'meta',
-		image: 'https://waitbutwhy.com/wp-content/uploads/2018/04/How-do-you-work-4.png',
-		link: 'https://github.com/burrrata/meta',
 		pinned: true,
 	},
 	// Image Viewer
 	{
 		title: 'Image Viewer',
+		tagline: '',
+		description: '',
 		image: 'https://apod.nasa.gov/apod/image/1904/M87bh_EHT_2629.jpg',
 		link: 'https://www.burrrata.ch/image-viewer/',
 		pinned: true,
@@ -41,13 +51,26 @@ const projectsData = [
 	// APOD Archive Scraper
 	{
 		title: 'APOD Archive Scraper',
+		tagline: '',
+		description: '',
 		image: 'https://apod.nasa.gov/apod/image/1906/Mice_LRGB_web.jpg',
 		link: 'https://github.com/burrrata/apod-archive-scraper',
+		pinned: true,
+	},
+	// Tic Tac Toe
+	{
+		title: 'Tic Tac Toe',
+		tagline: 'An interactive Tic Tac Toe game who\'s final state initializes a Game of Life.',
+		description: '',
+		image: 'https://raw.githubusercontent.com/burrrata/tic-tac-toe/master/tic-tac-toe.png',
+		link: 'https://www.burrrata.ch/tic-tac-toe/',
 		pinned: true,
 	},
 	// Ethereum Magicians: integrity ring
 	{
 		title: 'Ethereum Magicians: integrity ring',
+		tagline: '',
+		description: '',
 		image: 'https://ethereumevents.global/assets/fellowship-logomark.png',
 		link: 'https://github.com/ethereum-magicians/integrity-ring',
 		pinned: true,
@@ -55,29 +78,51 @@ const projectsData = [
 	// Are We There Yet
 	{
 		title: 'Are We There Yet',
+		tagline: '',
+		description: '',
 		image: 'https://raw.githubusercontent.com/burrrata/are_we_there_yet/master/are%20we%20there%20yet.png',
 		link: 'https://www.burrrata.ch/are_we_there_yet/',
+		pinned: true,
+	},
+	// Rusty Cryptoeconomics
+	{
+		title: 'Rusty Cryptoeconomics',
+		tagline: 'How to roll a blockchain from scratch with Rust.',
+		description: '',
+		image: 'https://github.com/burrrata/rusty_cryptoeconomics/raw/master/readme.jpg',
+		link: 'https://www.burrrata.ch/rusty_cryptoeconomics/intro.html',
 		pinned: true,
 	},
 	// Research
 	{
 		title: 'research',
+		tagline: '',
+		description: '',
 		image: 'https://assets4.bigthink.com/system/tinymce_assets/3261/original/thinker.jpg?1471139663',
 		link: 'https://github.com/burrrata/research',
+		pinned: true,
+	},
+	// Entropy
+	{
+		title: 'Entropy',
+		tagline: 'A simple secure passphrase generator.',
+		description: '',
+		image: 'https://camo.githubusercontent.com/80ed774dd004f7901a4819cbdea6150211d01725/68747470733a2f2f696d67732e786b63642e636f6d2f636f6d6963732f70617373776f72645f737472656e6774682e706e67',
+		link: 'https://www.burrrata.ch/entropy',
 		pinned: true,
 	},
 ];
 
 
 // Automagically turns the highlevelHighlightsData into components
-const ProjectHighlights = (props) => (
+export const ProjectHighlights = (props) => (
 	<div>
 		<div style={{
 			padding: '1vmin',
 			textAlign: 'center',
 		}}>
-			<h2>More Stuff</h2>
-			<p>More things I've built or contributed to</p>
+			<h1>More Stuff</h1>
+			<p>things I've built or contributed to</p>
 		</div>
 		{projectsData && projectsData.length && (
 			<div style={{
@@ -97,7 +142,7 @@ const ProjectHighlights = (props) => (
 				}}>
 				{projectsData
 					.filter(item => item.pinned === true)
-					.map(({title, description, image, link, pinned}, idx) => (
+					.map(({title, tagline, image, link, pinned}, idx) => (
 					<div style={{
 						//border: '1vmin solid blue',
 						minWidth: '18.5vmin',
@@ -123,5 +168,14 @@ const ProjectHighlights = (props) => (
 	</div>
 );
 
+
+export const ProjectsOverview = (props) => (
+	<div>
+		Hello World
+	</div>
+);
+
+
+
 // export the component
-export default ProjectHighlights 
+export default ProjectsOverview

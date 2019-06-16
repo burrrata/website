@@ -22,7 +22,7 @@ module.exports = {
       links: [
 				{
 					label: 'Projects', 
-					to: 'docs/doc1', 
+					to: 'projects', 
 					position: 'left'
 				},
 				{

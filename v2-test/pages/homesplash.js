@@ -50,7 +50,7 @@ function HomeSplash() {
 							border: 'solid 0.5vmin',
 						}}
 						to={withBaseUrl('docs/doc1')}>
-						Get Started
+						Let's build the future
 					</Link>
 				</div>
 			</div>
