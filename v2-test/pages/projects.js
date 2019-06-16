@@ -121,8 +121,8 @@ export const ProjectHighlights = (props) => (
 			padding: '1vmin',
 			textAlign: 'center',
 		}}>
-			<h1>More Stuff</h1>
-			<p>things I've built or contributed to</p>
+			<h1>Projects Highlights</h1>
+			<h3>cool things I've built or contributed to</h3>
 		</div>
 		{projectsData && projectsData.length && (
 			<div style={{
@@ -166,6 +166,27 @@ export const ProjectHighlights = (props) => (
 				))}
 			</div>
 		)};
+		<div style={{
+			padding: '3vmin',
+			paddingBottom: '10vmin',
+			textAlign: 'center',
+		}}>
+			<h1>
+				<a 
+					style={{
+						// https://github.com/facebook/docusaurus/blob/master/packages/docusaurus-1.x/lib/static/css/main.css
+						border: 'solid 0.5vmin',
+						borderRadius: '0.3vmin',
+						color: 'blue',
+						background: 'white',
+						padding: '1vmin',
+						textTransform: 'uppercase',
+					}}
+					href='projects'>
+					More Projects
+				</a>
+			</h1>
+		</div>
 	</div>
 );
 
