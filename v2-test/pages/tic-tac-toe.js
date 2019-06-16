@@ -97,7 +97,10 @@ const TTTCell = (props) => (
 	// 1 is alive
 	// 0 is dead
 	<td style={{
+		//border: '1vmin solid red',
 		background: `${props.value === 1 ? 'black' : 'white'}`,	
+		//height: '1vmin',
+		//width: '1vmin',
 	}}></td>
 );
 
@@ -107,7 +110,11 @@ function TTTRow(props) {
   for (let i=0; i<props.value.length; i++) {
     row.push(<TTTCell value={props.value[i]} key={createKey()} />);
   }
-  return <tr>{row}</tr>
+	return (
+		<tr style={{
+			//border: '1vmin solid green',
+		}}>{row}</tr>
+	);
 }
 
 // Create a table from an array of arrays (grid)
@@ -119,6 +126,7 @@ function TTTTable(props) {
 	return (
 		<table 
 			style={{
+				border: '1vmin solid purple',
 				flex: 'auto',
 				margin: '0 auto',
 				justifyContent: 'center',
@@ -127,7 +135,10 @@ function TTTTable(props) {
 				fontSize: '0',
 			}}
 			className='table'>
-			<tbody>
+			<tbody 
+				style = {{
+					border: '1vmin solid blue',
+				}}>
 				{table}
 			</tbody>
 		</table>);
@@ -349,23 +360,21 @@ function endGame(squares) {
 }
 
 // Creates a clickable square button
-function Square(props) {
-  return (
-		<button 
-			style={{
-				width: '10vmin',
-				height: '10vmin',
-			}}
-			className="click-square" 
-			onClick={props.onClick} 
-			id={props.value}>
-    </button>
-  );
-}
+const Square = (props) => (
+	<button 
+		style={{
+			border: '1vmin solid green',	
+			background: 'green',
+			width: '10vmin',
+			height: '10vmin',
+		}}
+		onClick={props.onClick} 
+		id={props.value}>
+	</button>
+);
 
 // The board that manages the game state
 class Board extends React.Component {
-  
   // init Board state
   constructor(props) {
     super(props);
@@ -376,16 +385,14 @@ class Board extends React.Component {
       mirror: TTT_GRID,
     };
   }
-  
+
   // perform one iteration of grid update
   GOL() {
-
     // init params
     let theGrid = this.state.grid;
     let mirrorGrid = this.state.mirror;
     let gridHeight = 25;
     let gridWidth = 25;
-    
     // check to make sure that the board has enough cells to function
     const componentWillUnmount = () => {
       clearInterval(this.timerID);
@@ -446,7 +453,6 @@ class Board extends React.Component {
         }
 	    }
 	  }
-
 	  //mirror edges to create wraparound effect
 	  for (var l = 1; l < gridHeight - 1; l++) { //iterate through rows
 	    //top and bottom
@@ -456,12 +462,10 @@ class Board extends React.Component {
 	    mirrorGrid[0][l] = mirrorGrid[gridHeight - 3][l];
 	    mirrorGrid[gridHeight - 2][l] = mirrorGrid[1][l];
 	  }
-
 	  // update the grids
 	  let temp = theGrid;
 	  theGrid = mirrorGrid;
 	  mirrorGrid = temp;
-    
     // update the state
     this.setState({
       grid: theGrid,
@@ -471,7 +475,6 @@ class Board extends React.Component {
   
   // change the state when the player clicks a button
   handleClick(i) {
-
     // this is the function that starts the GOL loop
     const componentDidMount = () => {
       this.timerID = setInterval(
@@ -485,7 +488,6 @@ class Board extends React.Component {
       clearInterval(this.timerID);
     }
     */
-    
     // get the current game state.
     const squares = this.state.squares.slice();
     // if the square is already played, no more clicking
@@ -494,7 +496,6 @@ class Board extends React.Component {
     }
     // if the square is not played, process the player's move
     squares[i] = this.state.xIsNext ? 'x' : 'o';
-    
     // check the end game
     // 🔥 this needs to be refactored into it's own module
     let currentEndGame = endGame(squares);
@@ -518,7 +519,6 @@ class Board extends React.Component {
       },
       1999);
     }
-    
     // If the game is has not ended, add the player's move to the game board
     let currentPlayer = squares[i];
     // 📍 (i+1) because the squares are 0 indexed but the grid zones are not
@@ -530,7 +530,6 @@ class Board extends React.Component {
       squares: squares,
       grid: STF(currentPlayer, currentZone, currentGrid),
     });
-    
     // Once the player has made a move, wait a bit and let the board react
     // 📍 the board is always 'o'
     let newStuff = randomMove(squares);
@@ -547,7 +546,6 @@ class Board extends React.Component {
       })
     },
     2000);
-    
     // check the end game again because a new move has been processed
     // 🔥 this needs to be refactored into it's own module
     let newEndGame = endGame(squares);
@@ -577,6 +575,9 @@ class Board extends React.Component {
   renderSquare(i) {
     return (
       <Square
+				style={{
+					border: '1vim solid green',
+				}}
         value={this.state.squares[i]}
         onClick={() => this.handleClick(i)}
         id={i}
@@ -594,16 +595,17 @@ class Board extends React.Component {
       <div>
 				<div 
 					style={{
-						position: 'relative', // was absolute
+						border: '1vmin solid green',
+						position: 'absolute', 
 						left: '9%',
 						right: '9%',
-						zIndex: '2',
+						//zIndex: '2',
 						opacity: '0',
-						//border: '5px solid red',
 					}}
 					className='over'>
 					<div
 						style={{
+							border: '1vmin solid green',
 							flex: 'auto',
 							margin: '0 auto',
 							justifyContent: 'center',
@@ -612,7 +614,9 @@ class Board extends React.Component {
 							fontSize: '0',
 						}}
 						className='table'>
-            <div>
+						<div style={{
+							border: '1vmin solid green',
+						}}>
               {this.renderSquare(0)}
               {this.renderSquare(1)}
               {this.renderSquare(2)}
@@ -631,6 +635,7 @@ class Board extends React.Component {
         </div>
 				<div 
 					style={{
+						border: '1vmin solid green',
 					  position: 'relative',
 						zIndex: '1',
 						//border: '5px solid yellow',
@@ -698,8 +703,7 @@ class TicTacToeApp extends React.Component {
 					alignItems: 'center',
 					fontSize: '1vmin',
 					textAlign: 'center',
-				}}
-				className='app'>
+				}}>
 				<Board />
       </div>
     );

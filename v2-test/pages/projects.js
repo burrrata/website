@@ -59,7 +59,7 @@ const projectsData = [
 	},
 	// Tic Tac Toe
 	{
-		title: 'Tic Tac Toe',
+		title: 'Tic-Tac-Toe Game of Life',
 		tagline: 'An interactive Tic Tac Toe game who\'s final state initializes a Game of Life.',
 		description: '',
 		image: 'https://raw.githubusercontent.com/burrrata/tic-tac-toe/master/tic-tac-toe.png',
@@ -161,6 +161,7 @@ export const ProjectHighlights = (props) => (
 								src={image} 
 								alt={title}/>
 						</a>
+						<h4>{title}</h4>
 					</div>
 				))}
 			</div>
