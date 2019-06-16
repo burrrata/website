@@ -32,7 +32,7 @@ module.exports = {
 				},
         {
           label: 'Work With Me',
-					to: '',
+					to: 'docs/bio',
           position: 'left',
         },
       ],
@@ -45,15 +45,15 @@ module.exports = {
           items: [
             {
               label: 'Bio',
-              to: 'docs/doc1',
+              to: 'docs/bio',
             },
 						{
 							label: 'Areas Of Expertise',
-							to: 'docs/doc2',
+							to: 'docs/areas-of-expertise',
 						},
 						{
-							label: 'Rates',
-							to: 'docs/doc3',
+							label: 'Working Together',
+							to: 'docs/working-together',
 						},
           ],
         },

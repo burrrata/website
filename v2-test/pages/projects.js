@@ -1,4 +1,6 @@
 import React from 'react';
+import Layout from '@theme/Layout';
+
 
 
 // projects data
@@ -193,6 +195,7 @@ export const ProjectHighlights = (props) => (
 
 // a generic component that takes in data to display
 export const ProjectsOverview = (props) => (
+	<Layout>
 	<div style={{
 		padding: '5vmin',
 	}}>
@@ -267,6 +270,7 @@ export const ProjectsOverview = (props) => (
 		)};
 	</div>
 	</div>
+</Layout>
 );
 
 
