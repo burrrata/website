@@ -7,9 +7,9 @@ import Layout from '@theme/Layout';
 const projectsData = [
 	// Meta
 	{
-		title: 'meta',
-		tagline: 'Things that make it easier to learn about and use new technologies.',
-		description: '',
+		title: 'Meta',
+		tagline: 'making it easier to learn about and use new technologies',
+		description: 'There\'s lot of problems in the world. Most of those problems cannot be solved with the same level of thinking that created them. We need to evolve.',
 		image: 'https://waitbutwhy.com/wp-content/uploads/2018/04/How-do-you-work-4.png',
 		link: 'https://github.com/burrrata/meta',
 		pinned: true,
@@ -17,7 +17,7 @@ const projectsData = [
 	// 1Hive 
 	{
 		title: '1Hive',
-		tagline: 'Helping Open Source Communities Thrive',
+		tagline: 'helping open source communities thrive',
 		description: '1Hive is a decentralized autonomous organization working to grow an open source commons and improve open source sustainability.',
 		image: 'https://avatars3.githubusercontent.com/u/29875830?s=200&v=4',
 		link: 'https://1hive.org/',
@@ -26,8 +26,8 @@ const projectsData = [
 	// Molochasaurus
 	{
 		title: 'Molochasaurus',
-		tagline: 'Everything related to the MolochDAO.',
-		description: '',
+		tagline: 'all things MolochDAO 👹',
+		description: 'A website that aggregates information and resources related to the MolochDAO.',
 		image: 'https://github.com/burrrata/molochasaurus/blob/master/website/static/img/moloch-background.jpg?raw=true',
 		link: 'https://www.burrrata.ch/molochasaurus',
 		pinned: true,
@@ -35,8 +35,8 @@ const projectsData = [
 	// Aragon Cooperative
 	{
 		title: 'Aragon Cooperative',
-		tagline: '',
-		description: '',
+		tagline: 'a community driven Aragon organization',
+		description: 'The Aragon Cooperative functions to support grass roots community initiatives in the broader Aragon ecosystem.',
 		image: 'https://avatars1.githubusercontent.com/u/46876207?s=200&v=4',
 		link: 'https://mainnet.aragon.org/#/0x940B2B518F761f4c52CDd9865C57D9a907DC5E82/',
 		pinned: true,
@@ -44,8 +44,8 @@ const projectsData = [
 	// Image Viewer
 	{
 		title: 'Image Viewer',
-		tagline: '',
-		description: '',
+		tagline: 'client side image slideshow app',
+		description: 'A web app that allows users to submit a text file with a list of image URLs and then view a slideshow that randomly displays images from that list.',
 		image: 'https://apod.nasa.gov/apod/image/1904/M87bh_EHT_2629.jpg',
 		link: 'https://www.burrrata.ch/image-viewer/',
 		pinned: true,
@@ -53,8 +53,8 @@ const projectsData = [
 	// APOD Archive Scraper
 	{
 		title: 'APOD Archive Scraper',
-		tagline: '',
-		description: '',
+		tagline: 'making the APOD archive programatically accessible',
+		description: 'Scripts to scrape the NASA APOD Archive and returns a text file with the direct URLs of NASA APOD images',
 		image: 'https://apod.nasa.gov/apod/image/1906/Mice_LRGB_web.jpg',
 		link: 'https://github.com/burrrata/apod-archive-scraper',
 		pinned: true,
@@ -62,17 +62,17 @@ const projectsData = [
 	// Tic Tac Toe
 	{
 		title: 'Tic-Tac-Toe Game of Life',
-		tagline: 'An interactive Tic Tac Toe game who\'s final state initializes a Game of Life.',
-		description: '',
+		tagline: 'click to play',
+		description: 'An interactive Tic Tac Toe game who\'s final state initializes a Game of Life.',
 		image: 'https://raw.githubusercontent.com/burrrata/tic-tac-toe/master/tic-tac-toe.png',
 		link: 'https://www.burrrata.ch/tic-tac-toe/',
 		pinned: true,
 	},
 	// Ethereum Magicians: integrity ring
 	{
-		title: 'Ethereum Magicians: integrity ring',
-		tagline: '',
-		description: '',
+		title: 'Ethereum Magicians: Integrity Ring',
+		tagline: 'improving Ethereum the community experience through empathy and communication',
+		description: 'The Ethereum Magicians exists to improve coordination and cooperation within the Ethereum ecosystem, and the Integrity ring focuses on the communication aspects of that.',
 		image: 'https://ethereumevents.global/assets/fellowship-logomark.png',
 		link: 'https://github.com/ethereum-magicians/integrity-ring',
 		pinned: true,
@@ -80,8 +80,8 @@ const projectsData = [
 	// Are We There Yet
 	{
 		title: 'Are We There Yet',
-		tagline: '',
-		description: '',
+		tagline: 'a meditation on life, happiness, and wage compensation in a modern world',
+		description: 'Exploring the "happiness benchmark", what it really means, and what that looks like in 2019.',
 		image: 'https://raw.githubusercontent.com/burrrata/are_we_there_yet/master/are%20we%20there%20yet.png',
 		link: 'https://www.burrrata.ch/are_we_there_yet/',
 		pinned: true,
@@ -89,17 +89,17 @@ const projectsData = [
 	// Rusty Cryptoeconomics
 	{
 		title: 'Rusty Cryptoeconomics',
-		tagline: 'How to roll a blockchain from scratch with Rust.',
-		description: '',
+		tagline: 'how to roll a blockchain from scratch with Rust',
+		description: 'Exploring blockchains from first principles, starting with a centralized b2c database and iteratively building towards a decentralized p2p database (aka a blockchain).',
 		image: 'https://github.com/burrrata/rusty_cryptoeconomics/raw/master/readme.jpg',
 		link: 'https://www.burrrata.ch/rusty_cryptoeconomics/intro.html',
 		pinned: true,
 	},
 	// Research
 	{
-		title: 'research',
-		tagline: '',
-		description: '',
+		title: 'Research',
+		tagline: 'forked from vbuterin\'s models of Charity Through Marginal Price Descrimination',
+		description: 'Exploring how cryptoeconomic mechanisms could help solve coordination problems in social settings.',
 		image: 'https://assets4.bigthink.com/system/tinymce_assets/3261/original/thinker.jpg?1471139663',
 		link: 'https://github.com/burrrata/research',
 		pinned: true,
@@ -108,7 +108,7 @@ const projectsData = [
 	{
 		title: 'Entropy',
 		tagline: 'a single file passphrase generator',
-		description: 'Passwords are hard. \n They don\'t have to be. \n Entropy is a project to make it easy to understand and use passphrases.',
+		description: 'Passwords are hard. They don\'t have to be. Entropy is a project to make it easy to understand and use passphrases.',
 		image: 'https://camo.githubusercontent.com/80ed774dd004f7901a4819cbdea6150211d01725/68747470733a2f2f696d67732e786b63642e636f6d2f636f6d6963732f70617373776f72645f737472656e6774682e706e67',
 		link: 'https://www.burrrata.ch/entropy',
 		pinned: true,
@@ -239,9 +239,9 @@ export const ProjectsOverview = (props) => (
 							flex: '0 0 50%',
 							}}>
 							<a href={link}>
-								<h2>
+								<h1>
 									{title}
-								</h2>
+								</h1>
 							</a>
 							<h3>
 								{tagline}
