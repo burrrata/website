@@ -107,8 +107,8 @@ const projectsData = [
 	// Entropy
 	{
 		title: 'Entropy',
-		tagline: 'A simple secure passphrase generator.',
-		description: '',
+		tagline: 'a single file passphrase generator',
+		description: 'Passwords are hard. \n They don\'t have to be. \n Entropy is a project to make it easy to understand and use passphrases.',
 		image: 'https://camo.githubusercontent.com/80ed774dd004f7901a4819cbdea6150211d01725/68747470733a2f2f696d67732e786b63642e636f6d2f636f6d6963732f70617373776f72645f737472656e6774682e706e67',
 		link: 'https://www.burrrata.ch/entropy',
 		pinned: true,
