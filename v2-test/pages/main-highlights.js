@@ -204,7 +204,6 @@ const MainHighlights = (props) => {
 */
 
 // REMOVED <LatestAPOD /> because it wasn't working
-// - I think I need to import some libraries to make stateful components work
 // a generic component that takes in data to display
 const MainHighlights = (props) => (
 	<div>

@@ -169,9 +169,81 @@ export const ProjectHighlights = (props) => (
 );
 
 
+// a generic component that takes in data to display
 export const ProjectsOverview = (props) => (
-	<div>
-		Hello World
+	<div style={{
+		padding: '5vmin',
+	}}>
+		<div style={{
+			padding: '5vmin',
+			textAlign: 'center',
+			fontSize: '3vmin',
+		}}>
+			<h1>
+				Projects
+			</h1>
+			<p>
+				things I've built or contributed to
+			</p>
+		</div>
+		<div>
+		{projectsData && projectsData.length && (
+			<div style={{
+				padding: '5vmin',
+				}}>
+				{projectsData.map(({title, tagline, description, image, link}, idx) => (
+					<div style={{
+						//border: '1vmin solid red',
+						margin: '0 auto',
+						display: 'flex',
+						flexFlow: 'row nowrap',
+						flex: 'auto',
+						flexDirection: 'row',
+						justifyContent: 'space-between',
+						padding: '2vmin',
+						textAlign: 'center',
+						alignItems: 'center',
+						fontSize: '3vmin',
+						wordWrap: 'break-word',
+						minHeight: '50vmin',
+						minWidth: '80vmin',
+						}} 
+						key={`landing-page-highlight-${idx}`}>
+						<div style={{
+							//border: '1vmin solid blue',
+							flex: '0 0 50%',
+							}}>
+							<a href={link}>
+								<h2>
+									{title}
+								</h2>
+							</a>
+							<h3>
+								{tagline}
+							</h3>
+							<p>
+								{description}
+							</p>
+						</div>
+						<div style={{
+								//border: '1vmin solid green',
+								flex: '0 0 50%',
+								}}>
+							<a href={link}>
+								<img style={{
+									width: '33vmin',
+									height: '33vmin',
+									borderRadius: '50%',
+									}}
+									alt={title}
+									src={image} />
+							</a>
+						</div>
+					</div>
+				))}
+		</div>
+		)};
+	</div>
 	</div>
 );
 
