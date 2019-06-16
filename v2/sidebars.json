@@ -1,4 +1,11 @@
 {
+	"about": {
+		"Let's Build The Future": [
+			"about",
+			"areas-of-expertise",
+			"working-together"
+		]
+	},
   "docs": {
     "Docusaurus": ["doc1", "doc2", "doc3"],
     "Utilities": ["style-guide"]

@@ -4,12 +4,12 @@ module.exports = {
 	organizationName: 'burrrata',
 	projectName: 'website',
 	////////////////////////////////////
-	// for publishing to gh-pages branch
-	url: 'https://burrrata.github.io',
-	baseUrl: 'website',
 	// for local development
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+	url: 'https://your-docusaurus-test-site.com',
+	baseUrl: '/',
+	// for publishing to gh-pages branch
+	//url: 'https://burrrata.github.io',
+	//baseUrl: '/website/',
 	///////////////////////////
   favicon: 'img/favicon.ico',
   themeConfig: {
@@ -22,7 +22,7 @@ module.exports = {
       links: [
 				{
 					label: 'Projects', 
-					to: 'docs/doc1', 
+					to: 'projects', 
 					position: 'left'
 				},
 				{
@@ -32,7 +32,7 @@ module.exports = {
 				},
         {
           label: 'Work With Me',
-					to: '',
+					to: 'docs/about',
           position: 'left',
         },
       ],
@@ -45,15 +45,15 @@ module.exports = {
           items: [
             {
               label: 'Bio',
-              to: 'docs/doc1',
+              to: 'docs/bio',
             },
 						{
 							label: 'Areas Of Expertise',
-							to: 'docs/doc2',
+							to: 'docs/areas-of-expertise',
 						},
 						{
-							label: 'Rates',
-							to: 'docs/doc3',
+							label: 'Working Together',
+							to: 'docs/working-together',
 						},
           ],
         },
@@ -65,12 +65,20 @@ module.exports = {
               href: 'https://www.reddit.com/user/burrrata',
             },
 						{
+							label: 'Keybase',
+							href: 'https://keybase.io/burrrata'
+						},
+						{
 							label: 'Riot',
 							href: '@burrrata:matrix.org'
 						},
 						{
-							label: 'Keybase',
-							href: 'https://keybase.io/burrrata'
+							label: 'ethresear.ch',
+							href: 'https://ethresear.ch/u/burrrata/summary',
+						},
+						{
+							label: 'forum.aragon.org',
+							href: 'https://forum.aragon.org/u/burrrata/summary',
 						},
           ],
         },
@@ -79,16 +87,16 @@ module.exports = {
           items: [
 						{
 							label: 'Projects',
-							to: 'docs/doc1',
+							to: 'projects',
+						},
+						{
+							label: 'GitHub',
+							href: 'https://github.com/burrrata',
 						},
             {
               label: 'Blog',
               to: 'blog',
             },
-						{
-							label: 'GitHub',
-							href: 'https://github.com/burrrata',
-						},
           ],
         },
       ],

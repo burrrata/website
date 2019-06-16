@@ -1,9 +1,10 @@
 //import React from 'react';
 import React, {Component, useState, useEffect} from 'react';
 
+// import "babel-polyfill";
 // Why do we need these for stateful components?
-const fetch = require('node-fetch');
-const regeneratorRuntime =  require("regenerator-runtime");
+//const fetch = require('node-fetch');
+//const regeneratorRuntime =  require("regenerator-runtime");
 
 
 // test data
@@ -38,12 +39,14 @@ const mainHighlightsData = [
 		image: 'https://raw.githubusercontent.com/burrrata/tic-tac-toe/master/tic-tac-toe.png',
 	},
 	// Molochasaurus
+	/*
 	{
 		title: 'Molochasaurus',
 		link: 'https://www.burrrata.ch/molochasaurus',
 		description: 'Everything related to the MolochDAO.',
 		image: 'https://github.com/burrrata/molochasaurus/blob/master/website/static/img/moloch-background.jpg?raw=true',
 	},
+	*/
 ];
 
 
@@ -200,11 +203,10 @@ const MainHighlights = (props) => {
 }
 */
 
-// OLD VERSION w messed up formatting
+// REMOVED <LatestAPOD /> because it wasn't working
 // a generic component that takes in data to display
 const MainHighlights = (props) => (
 	<div>
-		<LatestAPOD />
 		<div>
 		{mainHighlightsData && mainHighlightsData.length && (
 			<div style={{
