@@ -31,7 +31,7 @@ module.exports = {
 					position: 'left'
 				},
         {
-          label: 'Work With Me',
+          label: 'Let\'s Work Together',
 					to: 'docs/about',
           position: 'left',
         },
@@ -41,11 +41,11 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Work With Me',
+          title: 'Let\'s Work Together',
           items: [
             {
-              label: 'Bio',
-              to: 'docs/bio',
+              label: 'About',
+              to: 'docs/about',
             },
 						{
 							label: 'Areas Of Expertise',

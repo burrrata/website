@@ -1,6 +1,11 @@
 import React from 'react';
-import Layout from '@theme/Layout';
 
+import classnames from 'classnames';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import withBaseUrl from '@docusaurus/withBaseUrl';
+import styles from './styles.module.css';
 
 
 // projects data
@@ -123,8 +128,12 @@ export const ProjectHighlights = (props) => (
 			padding: '1vmin',
 			textAlign: 'center',
 		}}>
-			<h1>Projects Highlights</h1>
-			<h3>cool things I've built or contributed to</h3>
+			<h1>
+				Cool Stuff
+			</h1>
+			<h3>
+				I've built or contributed to
+			</h3>
 		</div>
 		{projectsData && projectsData.length && (
 			<div style={{
@@ -169,25 +178,21 @@ export const ProjectHighlights = (props) => (
 			</div>
 		)};
 		<div style={{
-			padding: '3vmin',
 			paddingBottom: '10vmin',
 			textAlign: 'center',
 		}}>
-			<h1>
-				<a 
-					style={{
-						// https://github.com/facebook/docusaurus/blob/master/packages/docusaurus-1.x/lib/static/css/main.css
-						border: 'solid 0.5vmin',
-						borderRadius: '0.3vmin',
-						color: 'blue',
-						background: 'white',
-						padding: '1vmin',
-						textTransform: 'uppercase',
-					}}
-					href='projects'>
-					More Projects
-				</a>
-			</h1>
+			<Link
+				className={classnames(
+					'button button--outline button--primary button--lg',
+					styles.getStarted,
+				)}
+				style={{
+					background: 'white',
+					border: 'solid 0.5vmin',
+				}}
+				to={withBaseUrl('projects')}>
+				More Projects
+			</Link>
 		</div>
 	</div>
 );
