@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[20],{47:function(e){e.exports={permalink:"/website/",source:"/home/deliciousdohnuts/website/v2/pages/index.js"}}}]);

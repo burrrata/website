@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[25],{46:function(s){s.exports={permalink:"/website/homesplash",source:"/home/deliciousdohnuts/burrrata.ch/v2-test/pages/homesplash.js"}}}]);
