@@ -5,19 +5,19 @@ import React from 'react';
 const highlevelHighlightsData = [
 	// highlevel highlight 1
 	{
-	title: 'Align Incentives',
-	description: 'Enhance your community governance and engagement via cryptoeconomic token models',
+	title: 'Aligning Incentives',
+	description: 'Enhance community governance and engagement via cryptoeconomic token models',
 	image: 'https://apod.nasa.gov/apod/image/1905/Trumpler14_Hubble_960.jpg',
 	},
 	// highlevel highlight 2
 	{
-		title: 'Bring Apps To Life',
+		title: 'Bringing Apps To Life',
 		description: 'Leverage the power of the browser to deliver fast and secure machine learning experiences',
 		image: 'https://apod.nasa.gov/apod/image/1903/F_JellyFish_FIN_APOD1024.jpg',
 	},
 	// highlevel highlight 3
 	{
-		title: 'Keep It Simple',
+		title: 'Keeping It Simple',
 		description: 'Delight users and increase engagement with simple, beautiful, and welcoming apps',
 		image: 'https://apod.nasa.gov/apod/image/1905/CarinaWideField_Willasch_1080.jpg',
 	},
