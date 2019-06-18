@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{54:function(e){e.exports={id:"about",sidebar_label:"About",title:"About Me",description:"Hey I'm burrrata. ",source:"/home/deliciousdohnuts/website/v2/docs/about.md",permalink:"/website/docs/about",sidebar:"about",category:"Let's Build The Future",next:"areas-of-expertise",next_title:"Areas Of Expertise"}}}]);

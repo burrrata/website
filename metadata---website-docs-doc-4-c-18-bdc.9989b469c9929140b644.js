@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[28],{64:function(e){e.exports={id:"doc4",title:"Other Document",description:"this is another document",source:"/home/deliciousdohnuts/website/v2/docs/exampledoc4.md",permalink:"/website/docs/doc4",sidebar:"docs-other",category:"First Category",next:"style-guide",next_title:"Style Guide"}}}]);
