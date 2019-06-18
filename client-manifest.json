@@ -78,14 +78,14 @@
       5,
       3
     ],
-    "/home/deliciousdohnuts/website/v2/pages/projects.js": [
+    "/home/deliciousdohnuts/website/v2/pages/tic-tac-toe.js": [
       0,
       1,
       2,
       5,
       3
     ],
-    "/home/deliciousdohnuts/website/v2/pages/tic-tac-toe.js": [
+    "/home/deliciousdohnuts/website/v2/pages/projects.js": [
       0,
       1,
       2,
@@ -125,41 +125,41 @@
       0,
       10
     ],
-    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-docs/docs-b5f.json": [
+    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-docs/website-docs-2ca.json": [
       11
     ],
     "main": [
       23,
       12
     ],
-    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-blog/blog-2019-06-18-hello-world-170.json": [
+    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-pages/website-fdc.json": [
       13
     ],
-    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-blog/blog-c06.json": [
+    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-blog/website-blog-2019-06-18-hello-world-002.json": [
       14
     ],
-    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-pages/index.json": [
+    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-blog/website-blog-e99.json": [
       15
     ],
-    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-docs/docs-about-5c5.json": [
+    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-docs/website-docs-about-d2a.json": [
       16
     ],
-    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-docs/docs-areas-of-expertise-2ae.json": [
+    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-docs/website-docs-areas-of-expertise-e68.json": [
       17
     ],
-    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-docs/docs-working-together-47d.json": [
+    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-docs/website-docs-working-together-c5b.json": [
       18
     ],
-    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-pages/highlevel-highlights-b6c.json": [
+    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-pages/website-highlevel-highlights-85b.json": [
       19
     ],
-    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-pages/homesplash-169.json": [
+    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-pages/website-homesplash-3fb.json": [
       20
     ],
-    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-pages/projects-70e.json": [
+    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-pages/website-projects-5f7.json": [
       21
     ],
-    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-pages/tic-tac-toe-75a.json": [
+    "/home/deliciousdohnuts/website/v2/.docusaurus/docusaurus-plugin-content-pages/website-tic-tac-toe-1d1.json": [
       22
     ],
     "runtime~main": [
@@ -173,7 +173,7 @@
         {
           "file": "vendors.a6c6ef1e8025393fa33b.js",
           "hash": "a6c6ef1e8025393fa33b",
-          "publicPath": "/vendors.a6c6ef1e8025393fa33b.js"
+          "publicPath": "/website/vendors.a6c6ef1e8025393fa33b.js"
         }
       ]
     },
@@ -182,14 +182,14 @@
         {
           "file": "docusaurus.5e8fb174d90467c62e20.css",
           "hash": "5e8fb174d90467c62e20",
-          "publicPath": "/docusaurus.5e8fb174d90467c62e20.css"
+          "publicPath": "/website/docusaurus.5e8fb174d90467c62e20.css"
         }
       ],
       "js": [
         {
           "file": "docusaurus.5e8fb174d90467c62e20.js",
           "hash": "5e8fb174d90467c62e20",
-          "publicPath": "/docusaurus.5e8fb174d90467c62e20.js"
+          "publicPath": "/website/docusaurus.5e8fb174d90467c62e20.js"
         }
       ]
     },
@@ -198,23 +198,23 @@
         {
           "file": "react-helmet.f425ac6b185c6ae401b1.js",
           "hash": "f425ac6b185c6ae401b1",
-          "publicPath": "/react-helmet.f425ac6b185c6ae401b1.js"
+          "publicPath": "/website/react-helmet.f425ac6b185c6ae401b1.js"
         }
       ]
     },
     "3": {
       "css": [
         {
-          "file": "common.92804969bd2a0af71a9a.css",
-          "hash": "92804969bd2a0af71a9a",
-          "publicPath": "/common.92804969bd2a0af71a9a.css"
+          "file": "common.08dfa5c03be4dd1a7842.css",
+          "hash": "08dfa5c03be4dd1a7842",
+          "publicPath": "/website/common.08dfa5c03be4dd1a7842.css"
         }
       ],
       "js": [
         {
-          "file": "common.92804969bd2a0af71a9a.js",
-          "hash": "92804969bd2a0af71a9a",
-          "publicPath": "/common.92804969bd2a0af71a9a.js"
+          "file": "common.08dfa5c03be4dd1a7842.js",
+          "hash": "08dfa5c03be4dd1a7842",
+          "publicPath": "/website/common.08dfa5c03be4dd1a7842.js"
         }
       ]
     },
@@ -223,185 +223,185 @@
         {
           "file": "prism-react-renderer.8a89274ea12f13758c04.js",
           "hash": "8a89274ea12f13758c04",
-          "publicPath": "/prism-react-renderer.8a89274ea12f13758c04.js"
+          "publicPath": "/website/prism-react-renderer.8a89274ea12f13758c04.js"
         }
       ]
     },
     "5": {
       "js": [
         {
-          "file": "component---home-deliciousdohnuts-website-v-2-pages-index-js-7-bc-faa.b90184003a4ecf075d2f.js",
-          "hash": "b90184003a4ecf075d2f",
-          "publicPath": "/component---home-deliciousdohnuts-website-v-2-pages-index-js-7-bc-faa.b90184003a4ecf075d2f.js"
+          "file": "component---home-deliciousdohnuts-website-v-2-pages-index-js-7-bc-faa.7f0cfd057e0196065ed3.js",
+          "hash": "7f0cfd057e0196065ed3",
+          "publicPath": "/website/component---home-deliciousdohnuts-website-v-2-pages-index-js-7-bc-faa.7f0cfd057e0196065ed3.js"
         }
       ]
     },
     "6": {
       "js": [
         {
-          "file": "content---blog-2019-06-18-hello-worldff-5-3c2.d7e8c37aff52d44919fd.js",
-          "hash": "d7e8c37aff52d44919fd",
-          "publicPath": "/content---blog-2019-06-18-hello-worldff-5-3c2.d7e8c37aff52d44919fd.js"
+          "file": "content---website-blog-2019-06-18-hello-worldff-5-45e.923531b783d5ea3e1d76.js",
+          "hash": "923531b783d5ea3e1d76",
+          "publicPath": "/website/content---website-blog-2019-06-18-hello-worldff-5-45e.923531b783d5ea3e1d76.js"
         }
       ]
     },
     "7": {
       "js": [
         {
-          "file": "content---blog-695-4e2.465d087bb0b1d176889d.js",
-          "hash": "465d087bb0b1d176889d",
-          "publicPath": "/content---blog-695-4e2.465d087bb0b1d176889d.js"
+          "file": "content---website-blog-695-9dd.865ffb48ca9fb6c4f0e1.js",
+          "hash": "865ffb48ca9fb6c4f0e1",
+          "publicPath": "/website/content---website-blog-695-9dd.865ffb48ca9fb6c4f0e1.js"
         }
       ]
     },
     "8": {
       "js": [
         {
-          "file": "content---docs-about-926-eb2.7c63a457940d602ed17b.js",
-          "hash": "7c63a457940d602ed17b",
-          "publicPath": "/content---docs-about-926-eb2.7c63a457940d602ed17b.js"
+          "file": "content---website-docs-about-926-a1e.8492cc13a237573d1851.js",
+          "hash": "8492cc13a237573d1851",
+          "publicPath": "/website/content---website-docs-about-926-a1e.8492cc13a237573d1851.js"
         }
       ]
     },
     "9": {
       "js": [
         {
-          "file": "content---docs-areas-of-expertise-245-73e.e4584eb364301e66edf8.js",
-          "hash": "e4584eb364301e66edf8",
-          "publicPath": "/content---docs-areas-of-expertise-245-73e.e4584eb364301e66edf8.js"
+          "file": "content---website-docs-areas-of-expertise-245-481.caa0157d080a977468ca.js",
+          "hash": "caa0157d080a977468ca",
+          "publicPath": "/website/content---website-docs-areas-of-expertise-245-481.caa0157d080a977468ca.js"
         }
       ]
     },
     "10": {
       "js": [
         {
-          "file": "content---docs-working-togetherdbb-20e.984b75bc58ccd64add60.js",
-          "hash": "984b75bc58ccd64add60",
-          "publicPath": "/content---docs-working-togetherdbb-20e.984b75bc58ccd64add60.js"
+          "file": "content---website-docs-working-togetherdbb-9ec.6b9430488b29cc906cf5.js",
+          "hash": "6b9430488b29cc906cf5",
+          "publicPath": "/website/content---website-docs-working-togetherdbb-9ec.6b9430488b29cc906cf5.js"
         }
       ]
     },
     "11": {
       "js": [
         {
-          "file": "docsMetadata---docs-9-af-8a1.a4b50dcb96242bd2bf98.js",
-          "hash": "a4b50dcb96242bd2bf98",
-          "publicPath": "/docsMetadata---docs-9-af-8a1.a4b50dcb96242bd2bf98.js"
+          "file": "docsMetadata---website-docs-519-118.6dd7dbf86c966bbf2046.js",
+          "hash": "6dd7dbf86c966bbf2046",
+          "publicPath": "/website/docsMetadata---website-docs-519-118.6dd7dbf86c966bbf2046.js"
         }
       ]
     },
     "12": {
       "css": [
         {
-          "file": "main.1ff9f0217e294e79f469.css",
-          "hash": "1ff9f0217e294e79f469",
-          "publicPath": "/main.1ff9f0217e294e79f469.css"
+          "file": "main.3fe40fe119de6db7c5d3.css",
+          "hash": "3fe40fe119de6db7c5d3",
+          "publicPath": "/website/main.3fe40fe119de6db7c5d3.css"
         }
       ],
       "js": [
         {
-          "file": "main.1ff9f0217e294e79f469.js",
-          "hash": "1ff9f0217e294e79f469",
-          "publicPath": "/main.1ff9f0217e294e79f469.js"
+          "file": "main.3fe40fe119de6db7c5d3.js",
+          "hash": "3fe40fe119de6db7c5d3",
+          "publicPath": "/website/main.3fe40fe119de6db7c5d3.js"
         }
       ]
     },
     "13": {
       "js": [
         {
-          "file": "metadata---blog-2019-06-18-hello-worldac-7-384.c922ebadfa075160c4a3.js",
-          "hash": "c922ebadfa075160c4a3",
-          "publicPath": "/metadata---blog-2019-06-18-hello-worldac-7-384.c922ebadfa075160c4a3.js"
+          "file": "metadata---website-bba-b4b.3722468f637175d68719.js",
+          "hash": "3722468f637175d68719",
+          "publicPath": "/website/metadata---website-bba-b4b.3722468f637175d68719.js"
         }
       ]
     },
     "14": {
       "js": [
         {
-          "file": "metadata---blogae-6-dfa.87f37d0265b980080733.js",
-          "hash": "87f37d0265b980080733",
-          "publicPath": "/metadata---blogae-6-dfa.87f37d0265b980080733.js"
+          "file": "metadata---website-blog-2019-06-18-hello-worlda-98-98a.a3ca0e068158661c782c.js",
+          "hash": "a3ca0e068158661c782c",
+          "publicPath": "/website/metadata---website-blog-2019-06-18-hello-worlda-98-98a.a3ca0e068158661c782c.js"
         }
       ]
     },
     "15": {
       "js": [
         {
-          "file": "metadata---d-01-9a3.b66d49054ffe76529870.js",
-          "hash": "b66d49054ffe76529870",
-          "publicPath": "/metadata---d-01-9a3.b66d49054ffe76529870.js"
+          "file": "metadata---website-blogb-8-e-c2b.538a86a1e88b30f78809.js",
+          "hash": "538a86a1e88b30f78809",
+          "publicPath": "/website/metadata---website-blogb-8-e-c2b.538a86a1e88b30f78809.js"
         }
       ]
     },
     "16": {
       "js": [
         {
-          "file": "metadata---docs-aboutfdf-041.ae5f11b4c925876f6468.js",
-          "hash": "ae5f11b4c925876f6468",
-          "publicPath": "/metadata---docs-aboutfdf-041.ae5f11b4c925876f6468.js"
+          "file": "metadata---website-docs-about-5-e-6-929.7a51bf2a65d765c2fa53.js",
+          "hash": "7a51bf2a65d765c2fa53",
+          "publicPath": "/website/metadata---website-docs-about-5-e-6-929.7a51bf2a65d765c2fa53.js"
         }
       ]
     },
     "17": {
       "js": [
         {
-          "file": "metadata---docs-areas-of-expertiseea-8-076.5adc0e031792bfb82ee5.js",
-          "hash": "5adc0e031792bfb82ee5",
-          "publicPath": "/metadata---docs-areas-of-expertiseea-8-076.5adc0e031792bfb82ee5.js"
+          "file": "metadata---website-docs-areas-of-expertisec-2-a-e7a.53b21815b08841898239.js",
+          "hash": "53b21815b08841898239",
+          "publicPath": "/website/metadata---website-docs-areas-of-expertisec-2-a-e7a.53b21815b08841898239.js"
         }
       ]
     },
     "18": {
       "js": [
         {
-          "file": "metadata---docs-working-togethera-06-c39.3a89d44fb98ed80ffdc3.js",
-          "hash": "3a89d44fb98ed80ffdc3",
-          "publicPath": "/metadata---docs-working-togethera-06-c39.3a89d44fb98ed80ffdc3.js"
+          "file": "metadata---website-docs-working-together-9-c-8-c6d.c0dd46ee3ce789884f81.js",
+          "hash": "c0dd46ee3ce789884f81",
+          "publicPath": "/website/metadata---website-docs-working-together-9-c-8-c6d.c0dd46ee3ce789884f81.js"
         }
       ]
     },
     "19": {
       "js": [
         {
-          "file": "metadata---highlevel-highlights-1-b-0-dee.c8ff5b32467ae315318b.js",
-          "hash": "c8ff5b32467ae315318b",
-          "publicPath": "/metadata---highlevel-highlights-1-b-0-dee.c8ff5b32467ae315318b.js"
+          "file": "metadata---website-highlevel-highlightsff-7-d1c.4c79c30fda5b4e71bbcd.js",
+          "hash": "4c79c30fda5b4e71bbcd",
+          "publicPath": "/website/metadata---website-highlevel-highlightsff-7-d1c.4c79c30fda5b4e71bbcd.js"
         }
       ]
     },
     "20": {
       "js": [
         {
-          "file": "metadata---homesplash-2-bf-d77.577f6dee0fb9bf14bdad.js",
-          "hash": "577f6dee0fb9bf14bdad",
-          "publicPath": "/metadata---homesplash-2-bf-d77.577f6dee0fb9bf14bdad.js"
+          "file": "metadata---website-homesplashc-23-a0f.46716614b2514c661446.js",
+          "hash": "46716614b2514c661446",
+          "publicPath": "/website/metadata---website-homesplashc-23-a0f.46716614b2514c661446.js"
         }
       ]
     },
     "21": {
       "js": [
         {
-          "file": "metadata---projects-2-a-5-967.1e0e927c3a026f52bf55.js",
-          "hash": "1e0e927c3a026f52bf55",
-          "publicPath": "/metadata---projects-2-a-5-967.1e0e927c3a026f52bf55.js"
+          "file": "metadata---website-projectsdf-7-a5f.f4786cbb128479bc0e32.js",
+          "hash": "f4786cbb128479bc0e32",
+          "publicPath": "/website/metadata---website-projectsdf-7-a5f.f4786cbb128479bc0e32.js"
         }
       ]
     },
     "22": {
       "js": [
         {
-          "file": "metadata---tic-tac-toe-7-a-5-e89.d4fcfc6f128488adbce0.js",
-          "hash": "d4fcfc6f128488adbce0",
-          "publicPath": "/metadata---tic-tac-toe-7-a-5-e89.d4fcfc6f128488adbce0.js"
+          "file": "metadata---website-tic-tac-toe-70-e-704.077d0fd5b72cbaca65b6.js",
+          "hash": "077d0fd5b72cbaca65b6",
+          "publicPath": "/website/metadata---website-tic-tac-toe-70-e-704.077d0fd5b72cbaca65b6.js"
         }
       ]
     },
     "23": {
       "js": [
         {
-          "file": "runtime~main.1fb4b3aa743e74bf9b21.js",
-          "hash": "1fb4b3aa743e74bf9b21",
-          "publicPath": "/runtime~main.1fb4b3aa743e74bf9b21.js"
+          "file": "runtime~main.870bd28febc519447c89.js",
+          "hash": "870bd28febc519447c89",
+          "publicPath": "/website/runtime~main.870bd28febc519447c89.js"
         }
       ]
     }
