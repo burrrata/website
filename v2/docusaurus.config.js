@@ -7,9 +7,12 @@ module.exports = {
 	// for local development
 	url: 'https://your-docusaurus-test-site.com',
 	baseUrl: '/',
-	// for publishing to gh-pages branch
+	// for publishing to burrrata.ch/website
 	//url: 'https://burrrata.github.io',
 	//baseUrl: '/website/',
+	// for publishing to burrrata.ch
+	//url: 'https://burrrata.github.io',
+	//baseUrl: '/',
 	///////////////////////////
   favicon: 'img/favicon.ico',
   themeConfig: {

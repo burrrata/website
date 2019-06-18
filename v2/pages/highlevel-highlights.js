@@ -3,22 +3,29 @@ import React from 'react';
 
 // highlevel highlights data
 const highlevelHighlightsData = [
-	// highlevel highlight 1
+	// Aligning Incentives
 	{
 	title: 'Aligning Incentives',
-	description: 'Enhance community governance and engagement via cryptoeconomic token models',
+	description: 'Creating positive-sum community engagement and governance models via cryptoeconomic tokens',
 	image: 'https://apod.nasa.gov/apod/image/1905/Trumpler14_Hubble_960.jpg',
 	},
-	// highlevel highlight 2
+	// Bringing Apps to Life (ML)
+	/*
 	{
 		title: 'Bringing Apps To Life',
 		description: 'Leverage the power of the browser to deliver fast and secure machine learning experiences',
 		image: 'https://apod.nasa.gov/apod/image/1903/F_JellyFish_FIN_APOD1024.jpg',
 	},
-	// highlevel highlight 3
+	*/
+	{
+		title: 'Bringing Ideas To Life',
+		description: 'Improving the adoption of cutting edge technologies by improving the developer experience of learning about and using those technologies',
+		image: 'https://apod.nasa.gov/apod/image/1903/F_JellyFish_FIN_APOD1024.jpg',
+	},
+	// Keeping It Simple
 	{
 		title: 'Keeping It Simple',
-		description: 'Delight users and increase engagement with simple, beautiful, and welcoming apps',
+		description: 'Focusing on what matters to create the changes we want to see in the world',
 		image: 'https://apod.nasa.gov/apod/image/1905/CarinaWideField_Willasch_1080.jpg',
 	},
 ];
