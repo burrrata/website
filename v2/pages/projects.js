@@ -10,6 +10,15 @@ import styles from './styles.module.css';
 
 // projects data
 const projectsData = [
+	// Daonuts
+	{
+		title: 'Daonuts',
+		tagline: 'tools for self-sovereign online communities',
+		description: 'Daonuts is a project to empower Reddit communities with Ethereum based tools for governance and engagement. This is an unprecedented opportunity to demonstrate the power of Ethereum to users of one of the most trafficked web destinations in the world. More importantly, this opens the door to self-sovereign communities - communities that exist on their own and have the tools to chart their own destiny.',
+		image: 'https://www.burrrata.ch/daonuts-website/img/favicon.ico',
+		link: 'https://www.burrrata.ch/daonuts-website/',
+		pinned: true,
+	},
 	// Meta
 	{
 		title: 'Meta',
