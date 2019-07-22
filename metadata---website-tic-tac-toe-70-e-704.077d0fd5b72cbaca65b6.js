@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[22],{46:function(e){e.exports={permalink:"/website/tic-tac-toe",source:"/home/deliciousdohnuts/website/v2/pages/tic-tac-toe.js"}}}]);

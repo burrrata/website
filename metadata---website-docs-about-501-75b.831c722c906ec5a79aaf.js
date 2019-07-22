@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[16],{53:function(e){e.exports={id:"about",sidebar_label:"About",title:"About Me",description:"Hey I'm burrrata. ",source:"/home/ithinkthere4iam/Dev/burrrata.ch/website/docs/about.md",permalink:"/website/docs/about",sidebar:"about",category:"Let's Build The Future",next:"areas-of-expertise",next_title:"Areas Of Expertise"}}}]);
