@@ -1,10 +1,7 @@
-<div>
-  <h1 align='center'>
-    <a href='https://www.burrrata.ch/website/'>
-      website
-    </a>
-  </h1>
-  <p align='center'>
-    testing a new website
-  </p>
-</div>
+<br>
+<p align="center">
+  <a href="burrrata.ch/website">
+    <img src="static/img/favicon.ico">  
+  </a>
+</p>
+<br>
