@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{44:function(e){e.exports={permalink:"/",source:"/home/ithinkthere4iam/Dev/burrrata.ch/website/pages/index.js"}}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[15],{55:function(e){e.exports={permalink:"/blog",page:1,postsPerPage:10,totalPages:1,totalCount:1,previousPage:null,nextPage:null}}}]);
