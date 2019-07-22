@@ -10,6 +10,15 @@ import styles from './styles.module.css';
 
 // projects data
 const projectsData = [
+	// Cryptoeconomics.Study
+	{
+		title: 'Cryptoeconomics.Study',
+		tagline: 'Everything you Need to Learn The Fundamentals Of Cryptoeconomics',
+		description: 'Cryptoeconomics.Study is a 1 Stop Shop For Cryptoeconomic Mechanism Design. The course is broken down into chunks, each chapter focusing on a particular flavor of cryptoeconomic mechanisms, and each subsection focusing in on the practical real world tools that make it happen. We present this material in the form of engaging lectures, detailed documentation and resources to dive deeper on all topics covered, and challenging coding assignments. This will get you familiar with concepts, tooling, and workflow used to build cryptoeconomic systems in the real world on Ethereum!',
+		image: 'https://i.imgur.com/XzsEQmk.png',
+		link: 'https://www.burrrata.ch/ces-website/',
+		pinned: true,
+	},
 	// Daonuts
 	{
 		title: 'Daonuts',
@@ -26,7 +35,7 @@ const projectsData = [
 		description: 'There\'s lot of problems in the world. Most of those problems cannot be solved with the same level of thinking that created them. We need to evolve.',
 		image: 'https://waitbutwhy.com/wp-content/uploads/2018/04/How-do-you-work-4.png',
 		link: 'https://github.com/burrrata/meta',
-		pinned: true,
+		pinned: false,
 	},
 	// 1Hive 
 	{
@@ -53,7 +62,7 @@ const projectsData = [
 		description: 'The Aragon Cooperative functions to support grass roots community initiatives in the broader Aragon ecosystem.',
 		image: 'https://avatars1.githubusercontent.com/u/46876207?s=200&v=4',
 		link: 'https://mainnet.aragon.org/#/0x940B2B518F761f4c52CDd9865C57D9a907DC5E82/',
-		pinned: true,
+		pinned: false,
 	},
 	// Image Viewer
 	{
@@ -62,7 +71,7 @@ const projectsData = [
 		description: 'A web app that allows users to submit a text file with a list of image URLs and then view a slideshow that randomly displays images from that list.',
 		image: 'https://apod.nasa.gov/apod/image/1904/M87bh_EHT_2629.jpg',
 		link: 'https://www.burrrata.ch/image-viewer/',
-		pinned: true,
+		pinned: false,
 	},
 	// APOD Archive Scraper
 	{
@@ -71,7 +80,7 @@ const projectsData = [
 		description: 'Scripts to scrape the NASA APOD Archive and returns a text file with the direct URLs of NASA APOD images',
 		image: 'https://apod.nasa.gov/apod/image/1906/Mice_LRGB_web.jpg',
 		link: 'https://github.com/burrrata/apod-archive-scraper',
-		pinned: true,
+		pinned: false,
 	},
 	// Tic Tac Toe
 	{
@@ -89,7 +98,7 @@ const projectsData = [
 		description: 'The Ethereum Magicians exists to improve coordination and cooperation within the Ethereum ecosystem, and the Integrity ring focuses on the communication aspects of that.',
 		image: 'https://ethereumevents.global/assets/fellowship-logomark.png',
 		link: 'https://github.com/ethereum-magicians/integrity-ring',
-		pinned: true,
+		pinned: false,
 	},
 	// Are We There Yet
 	{
@@ -98,7 +107,7 @@ const projectsData = [
 		description: 'Exploring the "happiness benchmark", what it really means, and what that looks like in 2019.',
 		image: 'https://raw.githubusercontent.com/burrrata/are_we_there_yet/master/are%20we%20there%20yet.png',
 		link: 'https://www.burrrata.ch/are_we_there_yet/',
-		pinned: true,
+		pinned: false,
 	},
 	// Rusty Cryptoeconomics
 	{
@@ -116,7 +125,7 @@ const projectsData = [
 		description: 'Exploring how cryptoeconomic mechanisms could help solve coordination problems in social settings.',
 		image: 'https://assets4.bigthink.com/system/tinymce_assets/3261/original/thinker.jpg?1471139663',
 		link: 'https://github.com/burrrata/research',
-		pinned: true,
+		pinned: false,
 	},
 	// Entropy
 	{

@@ -19,7 +19,6 @@ function Home() {
   return (
     <Layout>
 			<HomeSplash />
-			<HighlevelHighlights />
 			<ProjectHighlights />
     </Layout>
   );

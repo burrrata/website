@@ -23,6 +23,11 @@ module.exports = {
         src: 'img/burrrata.png',
       },
       links: [
+        {
+          label: 'About',
+					to: 'docs/about',
+          position: 'left',
+        },
 				{
 					label: 'Projects', 
 					to: 'projects', 
@@ -33,11 +38,6 @@ module.exports = {
 					to: 'blog', 
 					position: 'left'
 				},
-        {
-          label: 'Let\'s Work Together',
-					to: 'docs/about',
-          position: 'left',
-        },
       ],
     },
     footer: {
@@ -63,22 +63,28 @@ module.exports = {
         {
           title: 'Community',
           items: [
+						// Reddit
             {
               label: 'Reddit',
               href: 'https://www.reddit.com/user/burrrata',
             },
+						// Keybase
 						{
 							label: 'Keybase',
 							href: 'https://keybase.io/burrrata'
 						},
+						// Ethereum Research
 						{
 							label: 'ethresear.ch',
 							href: 'https://ethresear.ch/u/burrrata/summary',
 						},
+						// Aragon Forum
+						/*
 						{
 							label: 'forum.aragon.org',
 							href: 'https://forum.aragon.org/u/burrrata/summary',
 						},
+						*/
           ],
         },
         {
