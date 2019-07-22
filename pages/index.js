@@ -27,7 +27,7 @@ function Home() {
 		>
 			<div
 				style={{
-					backgroundColor: 'rgba(0, 0, 0, 0.3)',	
+					backgroundColor: 'rgba(0, 0, 0, 0.5)',	
 				}}
 			>
 				<Layout>
