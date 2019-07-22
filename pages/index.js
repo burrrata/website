@@ -17,10 +17,25 @@ import {ProjectHighlights} from './projects.js';
 function Home() {
 	// return the components
   return (
-    <Layout>
-			<HomeSplash />
-			<ProjectHighlights />
-    </Layout>
+		<div
+			style={{
+				backgroundSize: 'cover',
+				backgroundRepeat: 'no-repeat',
+				backgroundPosition: 'center',
+				backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Burrata2.jpg/1200px-Burrata2.jpg)',
+			}}
+		>
+			<div
+				style={{
+					backgroundColor: 'rgba(0, 0, 0, 0.3)',	
+				}}
+			>
+				<Layout>
+					<HomeSplash />
+					<ProjectHighlights />
+				</Layout>
+			</div>
+		</div>
   );
 }
 

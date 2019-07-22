@@ -141,7 +141,11 @@ const projectsData = [
 
 // Automagically turns the highlevelHighlightsData into components
 export const ProjectHighlights = (props) => (
-	<div>
+	<div
+		style={{
+			padding: '5vmin',
+		}}
+	>
 		<div style={{
 			padding: '1vmin',
 			textAlign: 'center',
@@ -219,14 +223,19 @@ export const ProjectHighlights = (props) => (
 // a generic component that takes in data to display
 export const ProjectsOverview = (props) => (
 	<Layout>
-	<div style={{
-		padding: '5vmin',
-	}}>
-		<div style={{
-			padding: '5vmin',
-			textAlign: 'center',
-			fontSize: '3vmin',
-		}}>
+		<div
+			style={{
+			}}
+		>
+			<div
+				style={{
+					padding: '10vmin',
+					textAlign: 'center',
+					fontSize: '3vmin',
+					backgroundColor: 'rgba(0, 0, 0, 0.3)',	
+				}}
+			>
+			<div>
 			<h1>
 				Projects
 			</h1>
@@ -266,12 +275,12 @@ export const ProjectsOverview = (props) => (
 									{title}
 								</h1>
 							</a>
-							<h3>
+							<h2>
 								{tagline}
-							</h3>
-							<p>
+							</h2>
+							<h3>
 								{description}
-							</p>
+							</h3>
 						</div>
 						<div style={{
 								//border: '1vmin solid green',
@@ -291,6 +300,7 @@ export const ProjectsOverview = (props) => (
 				))}
 		</div>
 		)};
+	</div>
 	</div>
 	</div>
 </Layout>
