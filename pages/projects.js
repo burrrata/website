@@ -144,6 +144,7 @@ export const ProjectHighlights = (props) => (
 	<div
 		style={{
 			padding: '5vmin',
+			color: 'white',
 		}}
 	>
 		<div style={{
