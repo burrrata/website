@@ -16,15 +16,7 @@
       10,
       0
     ],
-    "@theme/DocItem": [
-      0,
-      2,
-      3,
-      4,
-      5,
-      1
-    ],
-    "@theme/DocPage": [
+    "@theme/BlogListPage": [
       0,
       2,
       3,
@@ -40,7 +32,15 @@
       5,
       1
     ],
-    "@theme/BlogListPage": [
+    "@theme/DocItem": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      1
+    ],
+    "@theme/DocPage": [
       0,
       2,
       3,
@@ -125,41 +125,41 @@
       0,
       10
     ],
-    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-docs/website-docs-2ca.json": [
+    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-docs/docs-b5f.json": [
       11
     ],
     "main": [
       23,
       12
     ],
-    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-pages/website-fdc.json": [
+    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-pages/index.json": [
       13
     ],
-    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-blog/website-blog-2019-06-18-hello-world-002.json": [
+    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-blog/blog-2019-06-18-hello-world-170.json": [
       14
     ],
-    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-blog/website-blog-e99.json": [
+    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-blog/blog-c06.json": [
       15
     ],
-    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-docs/website-docs-about-d2a.json": [
+    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-docs/docs-about-5c5.json": [
       16
     ],
-    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-docs/website-docs-areas-of-expertise-e68.json": [
+    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-docs/docs-areas-of-expertise-2ae.json": [
       17
     ],
-    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-docs/website-docs-working-together-c5b.json": [
+    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-docs/docs-working-together-47d.json": [
       18
     ],
-    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-pages/website-highlevel-highlights-85b.json": [
+    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-pages/highlevel-highlights-b6c.json": [
       19
     ],
-    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-pages/website-homesplash-3fb.json": [
+    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-pages/homesplash-169.json": [
       20
     ],
-    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-pages/website-projects-5f7.json": [
+    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-pages/projects-70e.json": [
       21
     ],
-    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-pages/website-tic-tac-toe-1d1.json": [
+    "/home/ithinkthere4iam/Dev/burrrata.ch/website/.docusaurus/docusaurus-plugin-content-pages/tic-tac-toe-75a.json": [
       22
     ],
     "runtime~main": [
@@ -173,23 +173,23 @@
         {
           "file": "vendors.a6c6ef1e8025393fa33b.js",
           "hash": "a6c6ef1e8025393fa33b",
-          "publicPath": "/website/vendors.a6c6ef1e8025393fa33b.js"
+          "publicPath": "/vendors.a6c6ef1e8025393fa33b.js"
         }
       ]
     },
     "1": {
       "css": [
         {
-          "file": "docusaurus.5e8fb174d90467c62e20.css",
-          "hash": "5e8fb174d90467c62e20",
-          "publicPath": "/website/docusaurus.5e8fb174d90467c62e20.css"
+          "file": "docusaurus.fb5d176ee1d50ca30470.css",
+          "hash": "fb5d176ee1d50ca30470",
+          "publicPath": "/docusaurus.fb5d176ee1d50ca30470.css"
         }
       ],
       "js": [
         {
-          "file": "docusaurus.5e8fb174d90467c62e20.js",
-          "hash": "5e8fb174d90467c62e20",
-          "publicPath": "/website/docusaurus.5e8fb174d90467c62e20.js"
+          "file": "docusaurus.fb5d176ee1d50ca30470.js",
+          "hash": "fb5d176ee1d50ca30470",
+          "publicPath": "/docusaurus.fb5d176ee1d50ca30470.js"
         }
       ]
     },
@@ -198,23 +198,23 @@
         {
           "file": "react-helmet.f425ac6b185c6ae401b1.js",
           "hash": "f425ac6b185c6ae401b1",
-          "publicPath": "/website/react-helmet.f425ac6b185c6ae401b1.js"
+          "publicPath": "/react-helmet.f425ac6b185c6ae401b1.js"
         }
       ]
     },
     "3": {
       "css": [
         {
-          "file": "common.befa4ed86bfaa968c53b.css",
-          "hash": "befa4ed86bfaa968c53b",
-          "publicPath": "/website/common.befa4ed86bfaa968c53b.css"
+          "file": "common.1b54be236e29ba186d61.css",
+          "hash": "1b54be236e29ba186d61",
+          "publicPath": "/common.1b54be236e29ba186d61.css"
         }
       ],
       "js": [
         {
-          "file": "common.befa4ed86bfaa968c53b.js",
-          "hash": "befa4ed86bfaa968c53b",
-          "publicPath": "/website/common.befa4ed86bfaa968c53b.js"
+          "file": "common.1b54be236e29ba186d61.js",
+          "hash": "1b54be236e29ba186d61",
+          "publicPath": "/common.1b54be236e29ba186d61.js"
         }
       ]
     },
@@ -223,185 +223,185 @@
         {
           "file": "prism-react-renderer.8a89274ea12f13758c04.js",
           "hash": "8a89274ea12f13758c04",
-          "publicPath": "/website/prism-react-renderer.8a89274ea12f13758c04.js"
+          "publicPath": "/prism-react-renderer.8a89274ea12f13758c04.js"
         }
       ]
     },
     "5": {
       "js": [
         {
-          "file": "component---home-ithinkthere-4-iam-dev-burrrata-ch-website-pages-index-jsa-28-16c.2cb17855b24d08af2428.js",
-          "hash": "2cb17855b24d08af2428",
-          "publicPath": "/website/component---home-ithinkthere-4-iam-dev-burrrata-ch-website-pages-index-jsa-28-16c.2cb17855b24d08af2428.js"
+          "file": "component---home-ithinkthere-4-iam-dev-burrrata-ch-website-pages-index-jsa-28-16c.e60cf0dace1f5cdee9d5.js",
+          "hash": "e60cf0dace1f5cdee9d5",
+          "publicPath": "/component---home-ithinkthere-4-iam-dev-burrrata-ch-website-pages-index-jsa-28-16c.e60cf0dace1f5cdee9d5.js"
         }
       ]
     },
     "6": {
       "js": [
         {
-          "file": "content---website-blog-1-e-9-225.f565841c47cb0ebc80d2.js",
-          "hash": "f565841c47cb0ebc80d2",
-          "publicPath": "/website/content---website-blog-1-e-9-225.f565841c47cb0ebc80d2.js"
+          "file": "content---blog-1-e-9-862.498c69a1dc06fdbf78ea.js",
+          "hash": "498c69a1dc06fdbf78ea",
+          "publicPath": "/content---blog-1-e-9-862.498c69a1dc06fdbf78ea.js"
         }
       ]
     },
     "7": {
       "js": [
         {
-          "file": "content---website-blog-2019-06-18-hello-world-635-593.719738a661594ee99edc.js",
-          "hash": "719738a661594ee99edc",
-          "publicPath": "/website/content---website-blog-2019-06-18-hello-world-635-593.719738a661594ee99edc.js"
+          "file": "content---blog-2019-06-18-hello-world-635-8fa.29bfa061079c34e88081.js",
+          "hash": "29bfa061079c34e88081",
+          "publicPath": "/content---blog-2019-06-18-hello-world-635-8fa.29bfa061079c34e88081.js"
         }
       ]
     },
     "8": {
       "js": [
         {
-          "file": "content---website-docs-about-0-cb-0a9.86a97b95463ea280f74c.js",
-          "hash": "86a97b95463ea280f74c",
-          "publicPath": "/website/content---website-docs-about-0-cb-0a9.86a97b95463ea280f74c.js"
+          "file": "content---docs-about-0-cb-137.85ee49150ab27c6e77a2.js",
+          "hash": "85ee49150ab27c6e77a2",
+          "publicPath": "/content---docs-about-0-cb-137.85ee49150ab27c6e77a2.js"
         }
       ]
     },
     "9": {
       "js": [
         {
-          "file": "content---website-docs-areas-of-expertise-617-2f0.d70642604e21bd6903f0.js",
-          "hash": "d70642604e21bd6903f0",
-          "publicPath": "/website/content---website-docs-areas-of-expertise-617-2f0.d70642604e21bd6903f0.js"
+          "file": "content---docs-areas-of-expertise-617-518.7fc9460cac6f87556821.js",
+          "hash": "7fc9460cac6f87556821",
+          "publicPath": "/content---docs-areas-of-expertise-617-518.7fc9460cac6f87556821.js"
         }
       ]
     },
     "10": {
       "js": [
         {
-          "file": "content---website-docs-working-together-54-b-43e.3b37ab46b61e08470be4.js",
-          "hash": "3b37ab46b61e08470be4",
-          "publicPath": "/website/content---website-docs-working-together-54-b-43e.3b37ab46b61e08470be4.js"
+          "file": "content---docs-working-together-54-b-424.1bb75c7b87db05a0d954.js",
+          "hash": "1bb75c7b87db05a0d954",
+          "publicPath": "/content---docs-working-together-54-b-424.1bb75c7b87db05a0d954.js"
         }
       ]
     },
     "11": {
       "js": [
         {
-          "file": "docsMetadata---website-docs-262-71e.b3c05b69f2776c67e709.js",
-          "hash": "b3c05b69f2776c67e709",
-          "publicPath": "/website/docsMetadata---website-docs-262-71e.b3c05b69f2776c67e709.js"
+          "file": "docsMetadata---docscdb-a35.6fdb7939aa967e35880a.js",
+          "hash": "6fdb7939aa967e35880a",
+          "publicPath": "/docsMetadata---docscdb-a35.6fdb7939aa967e35880a.js"
         }
       ]
     },
     "12": {
       "css": [
         {
-          "file": "main.d38f30f9c6ededb9b8e1.css",
-          "hash": "d38f30f9c6ededb9b8e1",
-          "publicPath": "/website/main.d38f30f9c6ededb9b8e1.css"
+          "file": "main.862c2b83aa546eef1b31.css",
+          "hash": "862c2b83aa546eef1b31",
+          "publicPath": "/main.862c2b83aa546eef1b31.css"
         }
       ],
       "js": [
         {
-          "file": "main.d38f30f9c6ededb9b8e1.js",
-          "hash": "d38f30f9c6ededb9b8e1",
-          "publicPath": "/website/main.d38f30f9c6ededb9b8e1.js"
+          "file": "main.862c2b83aa546eef1b31.js",
+          "hash": "862c2b83aa546eef1b31",
+          "publicPath": "/main.862c2b83aa546eef1b31.js"
         }
       ]
     },
     "13": {
       "js": [
         {
-          "file": "metadata---website-3-d-0-257.978c77acdae27a863387.js",
-          "hash": "978c77acdae27a863387",
-          "publicPath": "/website/metadata---website-3-d-0-257.978c77acdae27a863387.js"
+          "file": "metadata---419-38f.748644db05897fb92d46.js",
+          "hash": "748644db05897fb92d46",
+          "publicPath": "/metadata---419-38f.748644db05897fb92d46.js"
         }
       ]
     },
     "14": {
       "js": [
         {
-          "file": "metadata---website-blog-2019-06-18-hello-worldc-7-e-912.fc2f20826b4e6a6cd7da.js",
-          "hash": "fc2f20826b4e6a6cd7da",
-          "publicPath": "/website/metadata---website-blog-2019-06-18-hello-worldc-7-e-912.fc2f20826b4e6a6cd7da.js"
+          "file": "metadata---blog-2019-06-18-hello-worldd-4-d-c70.a89418482a24c3ab8c21.js",
+          "hash": "a89418482a24c3ab8c21",
+          "publicPath": "/metadata---blog-2019-06-18-hello-worldd-4-d-c70.a89418482a24c3ab8c21.js"
         }
       ]
     },
     "15": {
       "js": [
         {
-          "file": "metadata---website-blog-5-b-6-f47.6cab09b23bdcdf0165fe.js",
-          "hash": "6cab09b23bdcdf0165fe",
-          "publicPath": "/website/metadata---website-blog-5-b-6-f47.6cab09b23bdcdf0165fe.js"
+          "file": "metadata---blog-956-e2d.ec460b958ed59fff9b6f.js",
+          "hash": "ec460b958ed59fff9b6f",
+          "publicPath": "/metadata---blog-956-e2d.ec460b958ed59fff9b6f.js"
         }
       ]
     },
     "16": {
       "js": [
         {
-          "file": "metadata---website-docs-about-501-75b.7846f523f93409c59092.js",
-          "hash": "7846f523f93409c59092",
-          "publicPath": "/website/metadata---website-docs-about-501-75b.7846f523f93409c59092.js"
+          "file": "metadata---docs-aboutd-05-e71.1709873a16c0e2715d57.js",
+          "hash": "1709873a16c0e2715d57",
+          "publicPath": "/metadata---docs-aboutd-05-e71.1709873a16c0e2715d57.js"
         }
       ]
     },
     "17": {
       "js": [
         {
-          "file": "metadata---website-docs-areas-of-expertisedde-f22.b530e2b2e5b68e85b6af.js",
-          "hash": "b530e2b2e5b68e85b6af",
-          "publicPath": "/website/metadata---website-docs-areas-of-expertisedde-f22.b530e2b2e5b68e85b6af.js"
+          "file": "metadata---docs-areas-of-expertisece-1-47c.ddafb384f3bd83ac857a.js",
+          "hash": "ddafb384f3bd83ac857a",
+          "publicPath": "/metadata---docs-areas-of-expertisece-1-47c.ddafb384f3bd83ac857a.js"
         }
       ]
     },
     "18": {
       "js": [
         {
-          "file": "metadata---website-docs-working-together-3-cf-f44.c58a42b7bfc4061814b3.js",
-          "hash": "c58a42b7bfc4061814b3",
-          "publicPath": "/website/metadata---website-docs-working-together-3-cf-f44.c58a42b7bfc4061814b3.js"
+          "file": "metadata---docs-working-togetherf-2-d-1c8.e6f5755f95a43ee357a7.js",
+          "hash": "e6f5755f95a43ee357a7",
+          "publicPath": "/metadata---docs-working-togetherf-2-d-1c8.e6f5755f95a43ee357a7.js"
         }
       ]
     },
     "19": {
       "js": [
         {
-          "file": "metadata---website-highlevel-highlights-72-d-c63.7b47117406c1cc633f4c.js",
-          "hash": "7b47117406c1cc633f4c",
-          "publicPath": "/website/metadata---website-highlevel-highlights-72-d-c63.7b47117406c1cc633f4c.js"
+          "file": "metadata---highlevel-highlightsdff-cd2.50b4726da532e25c9600.js",
+          "hash": "50b4726da532e25c9600",
+          "publicPath": "/metadata---highlevel-highlightsdff-cd2.50b4726da532e25c9600.js"
         }
       ]
     },
     "20": {
       "js": [
         {
-          "file": "metadata---website-homesplash-354-0c7.5fe3b47257037b328a0a.js",
-          "hash": "5fe3b47257037b328a0a",
-          "publicPath": "/website/metadata---website-homesplash-354-0c7.5fe3b47257037b328a0a.js"
+          "file": "metadata---homesplash-5-eb-81f.3c8f5d05c538e008c988.js",
+          "hash": "3c8f5d05c538e008c988",
+          "publicPath": "/metadata---homesplash-5-eb-81f.3c8f5d05c538e008c988.js"
         }
       ]
     },
     "21": {
       "js": [
         {
-          "file": "metadata---website-projects-541-0d4.7b784b55a35b0aec2cf3.js",
-          "hash": "7b784b55a35b0aec2cf3",
-          "publicPath": "/website/metadata---website-projects-541-0d4.7b784b55a35b0aec2cf3.js"
+          "file": "metadata---projects-450-0cc.13c23ff0107fc3047811.js",
+          "hash": "13c23ff0107fc3047811",
+          "publicPath": "/metadata---projects-450-0cc.13c23ff0107fc3047811.js"
         }
       ]
     },
     "22": {
       "js": [
         {
-          "file": "metadata---website-tic-tac-toe-88-f-c5e.8b99c09afe6a9ab09721.js",
-          "hash": "8b99c09afe6a9ab09721",
-          "publicPath": "/website/metadata---website-tic-tac-toe-88-f-c5e.8b99c09afe6a9ab09721.js"
+          "file": "metadata---tic-tac-toe-17-f-25e.97147f387affd7d2fa8e.js",
+          "hash": "97147f387affd7d2fa8e",
+          "publicPath": "/metadata---tic-tac-toe-17-f-25e.97147f387affd7d2fa8e.js"
         }
       ]
     },
     "23": {
       "js": [
         {
-          "file": "runtime~main.cbce94f430bcf1d5cd20.js",
-          "hash": "cbce94f430bcf1d5cd20",
-          "publicPath": "/website/runtime~main.cbce94f430bcf1d5cd20.js"
+          "file": "runtime~main.c806e3cb6a35bb3a1f51.js",
+          "hash": "c806e3cb6a35bb3a1f51",
+          "publicPath": "/runtime~main.c806e3cb6a35bb3a1f51.js"
         }
       ]
     }
