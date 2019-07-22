@@ -13,4 +13,6 @@ Concretely this looks like:
 - fun, intuitive, and interactive media and education materials (documnetation and developer resources)
 - safe, secure, and simple apps that are easy to use and understand (Ethereum dApps with a focus on security AND usability)
 
-If you'd like to see what that looks like in the wild, check out my [projects](https://www.burrrata.ch/projects)! If these or anything similar sounds like something you'd like to create, [let me know](working-together.md) :) 
+If you'd like to see what that looks like in the wild, check out my [projects](https://www.burrrata.ch/projects)! 
+
+If these or anything similar sounds like something you'd like to create, [let me know](working-together.md) :) 
